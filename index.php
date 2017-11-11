@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 
-<?php
-include ('Header.php');
-?>
+<?php include ('Header.php');?>
 
 
     <body>

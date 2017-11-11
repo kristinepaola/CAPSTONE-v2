@@ -54,11 +54,11 @@
 
     <div class="collapse navbar-collapse yamm" id="navigation">
         <div class="button navbar-right">
-            <button class="navbar-btn nav-button wow bounceInRight login" id="login">Login</button>
-            <button class="navbar-btn nav-button wow fadeInRight" id="register" >Register</button>
+            <a href="login.php"><button class="navbar-btn nav-button wow bounceInRight login" id="login">Login</button></a>
+            <a href="register.php"><button class="navbar-btn nav-button wow fadeInRight" id="register" >Register</button></a>
         </div>
         <ul class="main-nav nav navbar-nav navbar-right">
-        	<li class="wow fadeInDown"><a class="" href="index.html">Home</a></li>
+        	<li class="wow fadeInDown"><a class="" href="index.php">Home</a></li>
         	<li class="wow fadeInDown"><a class="" href="">About Us</a></li>
         	<li class="wow fadeInDown"><a class="" href="">Events</a></li>
         	<li class="wow fadeInDown"><a class="" href="">Organizations</a></li>
@@ -66,100 +66,6 @@
     </div>
   </div>
 </nav>
-
-<!-- SIGN UP MODAL -->
-<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="signUp" >
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
-            <span aria-hidden="true">&times;</span>
-        </button>
-        <h3 class="modal-title">Sign Up Now!</h3>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <button class="btn btn-reg" id="volunteer">
-              <h4><a href="#">Register as a Volunteer</a></h4>
-            </button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <button class="btn btn-reg" id="organization">
-              <h4><a href="#">Register your Non Profit Organization</a></h4>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-nav" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- SIGN UP MODAL -->
-
-
-
-<!-- LOG IN MODAL -->
-<div class="modal fade" tabindex="-1" role="dialog" id="logIn" aria-labelledby="gridSystemModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" aria-label="Close" data-dismiss="modal">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h3 class="modal-title">Log In</h3>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <h5>Email:</h5>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <input type='email' class='form-control' name='emailadd' id='email'>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <h5>Password:</h5>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <input type='password' class='form-control' name='password' id='password'>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4 col-sm-offset-4">
-            <button type="submit" class="nav-button.login" data-dismiss="modal" id="login">Log In</button>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4 col-sm-offset-4">
-            <center>Not yet registered?</center>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4 col-sm-offset-4">
-            <center>Sign up <u><a href="#">HERE</a></u></center>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-nav" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- LOG IN MODAL -->
-
-
-
 </body>
 </html>
 <script src="assets/js/jquery-1.10.2.min.js"></script>
