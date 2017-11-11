@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+
+<?php
+include ('Header.php');
+?>
+
+
     <body>
         <div class="slider-area">
             <div class="slider">
@@ -194,8 +200,6 @@
         <!-- property area -->
        
 
-       
-
         <!-- Review -->
         <!--<div class="testimonial-area recent-property" style="background-color: #FCFCFC; padding-bottom: 15px;">
             <div class="container">
@@ -254,4 +258,8 @@
             </div>
         </div>-->
     </body>
+
+<?php
+include ('footer.php');
+?>
 </html>
