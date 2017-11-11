@@ -1,0 +1,55 @@
+body{
+font-family: roboto-regular;
+color: #000000;
+}
+.navbar{
+background-color: #ffd633;
+}
+
+.navbar-brand{
+font-size: 30px;
+}
+<!-- glyphicon sizes -->	
+.gi-5x{font-size: 5px;}
+.gi-10x{font-size: 10px;}
+.gi-15x{font-size: 15px;}
+.gi-20x{font-size: 20xpx;}
+<!-- glyphicon sizes -->
+.navbar-toggle{
+border-color: #000000;
+border-width: 2px;
+}
+.navbar-toggle .icon-bar{
+font-size: 9px;
+background-color: #000000;
+}
+.btn-nav{
+border-radius: 0px;
+width: 200px;
+margin: 5px;
+background-color: transparent;
+border-color: #000000;
+color: #000000;
+}
+a, .navbar-brand{
+color: #000000;
+}
+a:hover{
+text-transform: none;
+color: #000000;
+
+}
+
+	.btn-reg{
+		border-radius: 0px;
+		width: 400px;
+		margin: 5px;
+		background-color: transparent;
+		border-color: #000000;
+		color: #000000;
+	}	
+	.form-control{
+		border-radius: 0px;
+	}
+
+
