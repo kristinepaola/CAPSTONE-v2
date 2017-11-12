@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- branch ni ni daphne -->
+
 <html class="no-js">
 <head>
   <meta charset="utf-8">
@@ -35,9 +35,7 @@
 </head>
 <body>
 
-<div id="preloader">
-<div id="status">&nbsp;</div>
-</div>
+
 <nav class="navbar navbar-default ">
   <div class="container">
 
