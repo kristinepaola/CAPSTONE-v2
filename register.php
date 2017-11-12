@@ -56,22 +56,44 @@
 <div class="register-area" style="background-color: rgb(249, 249, 249);">
     <div class="container">
 
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-offset-3">
             <div class="box-for overflow">
                 <div class="col-md-12 col-xs-12 register-blocks">
                     <h2>New account : </h2>
                     <form action="" method="post">
                         <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" class="form-control" id="name">
+                            <label for="name">Non-Profit Organization Name</label>
+                            <input type="text" class="form-control" name="orgname" id="orgname">
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="text" class="form-control" id="email">
+                            <input type="email" class="form-control" name="emailadd" id="emailadd">
                         </div>
                         <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password">
+                            <label for="email">City</label>
+                            <input type="email" class="form-control" name="city" id="city">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Date Established</label>
+                            <input type="email" class="form-control" name="dateest" id="dateest">
+                        </div>
+                        <div class="form-group">
+                            <label for="advocacies">Advocacies</label><br>
+                            <input type="checkbox" name="advocacies" value="animals"> Animals<br>
+                        		<input type="checkbox" name="advocacies" value="arts"> Arts<br>
+                        		<input type="checkbox" name="advocacies" value="children"> Children<br>
+                        		<input type="checkbox" name="advocacies" value="education"> Education<br>
+                        		<input type="checkbox" name="advocacies" value="environment"> Environment<br>
+                        		<input type="checkbox" name="advocacies" value="faithbased"> Faith-Based<br>
+                        		<input type="checkbox" name="advocacies" value="healthcare"> Health Care<br>
+                        		<input type="checkbox" name="advocacies" value="homeless"> Homeless<br>
+                        		<input type="checkbox" name="advocacies" value="hunger"> Hunger<br>
+                        		<input type="checkbox" name="advocacies" value="lgbt"> LGBT<br>
+                        		<input type="checkbox" name="advocacies" value="peopledisabilities"> People with Disabilities<br>
+                        		<input type="checkbox" name="advocacies" value="riskreducation"> Risk Reduction<br>
+                        		<input type="checkbox" name="advocacies" value="seniorcitizens"> Senior Citizens<br>
+                        		<input type="checkbox" name="advocacies" value="women"> Women<br>
+                        		<input type="checkbox" name="advocacies" value="youth"> Youth<br>
                         </div>
                         <div class="text-center">
                             <button type="submit" class="btn btn-default">Register</button>
