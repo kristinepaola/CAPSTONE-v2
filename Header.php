@@ -53,7 +53,7 @@
     <div class="collapse navbar-collapse yamm" id="navigation">
         <div class="button navbar-right">
             <a href="login.php"><button class="navbar-btn nav-button wow bounceInRight login" id="login">Login</button></a>
-            <a href="register.php"><button class="navbar-btn nav-button wow fadeInRight" id="register" >Register</button></a>
+            <a href="register_organization.php"><button class="navbar-btn nav-button wow fadeInRight" id="register" >Register</button></a>
         </div>
         <ul class="main-nav nav navbar-nav navbar-right">
         	<li class="wow fadeInDown"><a class="" href="index.php">Home</a></li>
