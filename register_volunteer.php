@@ -3,6 +3,10 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
+<?php
+require ("sql_connect.php");
+?>
+
 <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
@@ -39,11 +43,11 @@
     </head>
     <body>
 
-        <div id="preloader">
+        <!-- <div id="preloader">
             <div id="status">&nbsp;</div>
-        </div>
+        </div> -->
         <!-- Body content -->
-
+<!--
         <div class="header-connect">
             <div class="container">
                 <div class="row">
@@ -69,32 +73,22 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!--End top header -->
-
-        <nav class="navbar navbar-default ">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt=""></a>
-                </div>
-
+<?php include ("Header.php");
+      include("sql_connect.php"); ?>
+        <!-- End of nav bar -->
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse yamm" id="navigation">
                     <div class="button navbar-right">
-                        <button class="navbar-btn nav-button wow bounceInRight login" onclick=" window.open('register.html')" data-wow-delay="0.4s">Login</button>
-                        <button class="navbar-btn nav-button wow fadeInRight" onclick=" window.open('submit-property.html')" data-wow-delay="0.5s">Submit</button>
+                        <button class="navbar-btn nav-button wow bounceInRight login" onclick=" window.open('register.html')" data-wow-delay="0.4s">REGISTER</button>
+                        <button class="navbar-btn nav-button wow fadeInRight" onclick=" window.open('submit-property.html')" data-wow-delay="0.5s">LOGIN</button>
                     </div>
                     <ul class="main-nav nav navbar-nav navbar-right">
-                        <li class="dropdown ymm-sw " data-wow-delay="0.1s">
-                            <a href="index.html" class="dropdown-toggle active" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Home <b class="caret"></b></a>
-                            <ul class="dropdown-menu navbar-nav">
+                        <!-- <li class="dropdown ymm-sw " data-wow-delay="0.1s"> -->
+                            <!-- <a href="index.html" class="dropdown-toggle active" data-toggle="dropdown" data-hover="dropdown" data-delay="200">ABOUT US <b class="caret"></b></a> -->
+                            <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="#">ABOUT US</a></li>
+                            <!-- <ul class="dropdown-menu navbar-nav">
                                 <li>
                                     <a href="index-2.html">Home Style 2</a>
                                 </li>
@@ -108,12 +102,12 @@
                                     <a href="index-5.html">Home Style 5</a>
                                 </li>
 
-                            </ul>
+                            </ul> -->
                         </li>
 
-                        <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="properties.html">Properties</a></li>
-                        <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="property.html">Property</a></li>
-                        <li class="dropdown yamm-fw" data-wow-delay="0.1s">
+                        <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="#">EVENTS</a></li>
+                        <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="#">ORGANIZATIONS</a></li>
+                        <!-- <li class="dropdown yamm-fw" data-wow-delay="0.1s">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Template <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li>
@@ -187,24 +181,25 @@
                                         </div>
                                     </div>
                                     <!-- /.yamm-content -->
-                                </li>
+                                <!-- </li>
                             </ul>
                         </li>
 
                         <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="contact.html">Contact</a></li>
-                    </ul>
+                    </ul> -->
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
-        <!-- End of nav bar -->
-
-        <div class="page-head">
+        <div class="page-head" align="center">
             <div class="container">
-                <div class="row">
-                    <div class="page-head-content">
-                        <h1 class="page-title">Hello : <span class="orange strong">Kimaro kyoto</span></h1>
-                    </div>
-                </div>
+              <div class="page-head-content">
+                <h2>SOCIAL LOGIN  </h2>
+
+                <p>
+                <a class="login-social" href="#"><i class="fa fa-google-plus"></i>&nbsp;Gmail</a>
+                <a class="login-social" href="#"><i class="fa fa-facebook"></i>&nbsp;Facebook</a>
+                </p>
+              </div>
             </div>
         </div>
         <!-- End page header -->
@@ -215,11 +210,11 @@
                 <div class="row">
                     <div class="col-sm-10 col-sm-offset-1 profiel-container">
 
-                        <form action="" method="">
+                        <form action="insertvolunteer.php" method="POST">
                             <div class="profiel-header">
                                 <h3>
-                                    <b>BUILD</b> YOUR PROFILE <br>
-                                    <small>This information will let us know more about you.</small>
+                                    <b>CREATE</b> YOUR ACCOUNT <br>
+                                    <!-- <small>This information will let us know more about you.</small> -->
                                 </h3>
                                 <hr>
                             </div>
@@ -235,35 +230,39 @@
                                     </div>
                                 </div>
 
-                                <div class="col-sm-3 padding-top-25">
+                                <div class="col-sm-4 padding-top-25">
 
                                     <div class="form-group">
                                         <label>First Name <small>(required)</small></label>
-                                        <input name="firstname" type="text" class="form-control" placeholder="Andrew...">
+                                        <input name="firstName" type="text" class="form-control" placeholder="Andrew...">
                                     </div>
                                     <div class="form-group">
-                                        <label>Last Name <small>(required)</small></label>
-                                        <input name="lastname" type="text" class="form-control" placeholder="Smith...">
+                                        <label>Password <small>(required)</small></label>
+                                        <input name="password" type="password" class="form-control">
                                     </div>
                                     <div class="form-group">
                                         <label>Email <small>(required)</small></label>
-                                        <input name="email" type="email" class="form-control" placeholder="andrew@email@email.com.com">
+                                        <input name="emailAdd" type="email" class="form-control" placeholder="andrew@email@email.com">
                                     </div>
                                 </div>
-                                <div class="col-sm-3 padding-top-25">
-                                    <div class="form-group">
+                                <div class="col-sm-4 padding-top-25">
+                                  <div class="form-group">
+                                      <label>Last Name <small>(required)</small></label>
+                                      <input name="lastName" type="text" class="form-control" placeholder="Smith...">
+                                  </div>
+                                    <!-- <div class="form-group">
                                         <label>Password <small>(required)</small></label>
                                         <input name="Password" type="password" class="form-control">
-                                    </div>
+                                    </div> -->
                                     <div class="form-group">
                                         <label>Confirm password : <small>(required)</small></label>
-                                        <input type="password" class="form-control">
+                                        <input name="confirmPass" type="password" class="form-control">
                                     </div>
                                 </div>
 
                             </div>
 
-                            <div class="clear">
+                            <!-- <div class="clear">
                                 <br>
                                 <hr>
                                 <br>
@@ -297,11 +296,11 @@
                                     </div>
                                 </div>
 
-                            </div>
+                            </div> -->
 
-                            <div class="col-sm-5 col-sm-offset-1">
+                            <div class="col-sm-5 col-sm-offset-1" align="right">
                                 <br>
-                                <input type='button' class='btn btn-finish btn-primary' name='finish' value='Finish' />
+                                <input type='submit' class='btn btn-finish btn-primary' name='signup' value='SIGN UP' />
                             </div>
                             <br>
                     </form>
@@ -314,7 +313,7 @@
 
 
           <!-- Footer area-->
-        <div class="footer-area">
+        <!-- <div class="footer-area">
 
             <div class=" footer">
                 <div class="container">
@@ -413,7 +412,7 @@
                                         </span>
                                     </div>
                                     <!-- /input-group -->
-                                </form>
+                                <!-- </form>
 
                                 <div class="social pull-right">
                                     <ul>
@@ -449,7 +448,7 @@
                 </div>
             </div>
 
-        </div>
+        </div> --> -->
 
 
         <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
