@@ -2,7 +2,6 @@
 
 <?php include ('Header.php');?>
 
-
     <body>
         <div class="slider-area">
             <div class="slider">
@@ -195,6 +194,6 @@ z
             </div>
         </div>
 
-
     </body>
+    <?php include ('Footer.php');?>
 </html>
