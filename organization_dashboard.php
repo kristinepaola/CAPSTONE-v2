@@ -18,7 +18,7 @@
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="icon" href="favicon.ico" type="image/x-icon">
-
+<link rel='stylesheet' href='assets/fullcalendar/fullcalendar.min.css'/>
 <link rel="stylesheet" href="assets/css/normalize.css">
 <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 <link rel="stylesheet" href="assets/css/fontello.css">
@@ -52,6 +52,7 @@
 
 <?php include ("Header.php"); ?>
 <!-- End of nav bar -->
+
 <div class="col-md-12">
   <div class="col-md-8">
     <h2>Welcome Philippine Red Cross</h2>
@@ -61,163 +62,133 @@
     <h2>Followers</h2>
   </div>
 </div>
+<div class="col-md-12">
+  <div class="col-md-4">
+    <h2>Upcoming Activities</h2>
+    <div id="list-type" class="proerty-th">
+        <div class="col-sm-12 p0">
+            <div class="box-two proerty-item">
+                <div class="item-thumb">
+                    <a href="property-1.html" ><img src="assets/img/demo/property-3.jpg"></a>
+                </div>
 
-
-<div class="page-head organization_dashboard">
-<div class="container">
-<div class="row">
-    <div class="page-head-content">
-        <h1 class="page-title ">Welcome Philipine Red Cross!</h1>
-        <button class="btn btn-success" id="readmore">Add an Event</button>
-    </div>
-</div>
-</div>
-</div>
-<!-- End page header -->
-
-<!-- property area -->
-<div class="properties-area recent-property" style="background-color: #FFF;">
-<div class="container">
-<div class="row">
-
-<div class="col-md-3 p0 padding-top-40">
-    <div class="blog-asside-right pr0">
-
-      <div class="panel panel-default sidebar-menu wow fadeInRight animated">
-          <div class="panel-heading">
-              <h3 class="panel-title">PAST ACTIVITIES</h3>
-          </div>
-          <div class="panel-body recent-property-widget">
-                      <ul>
-                      <li>
-                          <div class="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
-                              <a href="single.html"><img src="assets/img/volunteer.png"></a>
-                          </div>
-                          <div class="col-md-8 col-sm-8 col-xs-8 blg-entry">
-                              <h6> <a href="single.html">Million Volunteer Run </a></h6>
-                              <span class="property-price">August 20, 2016</span>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
-                              <a href="single.html"><img src="assets/img/for project/2.jpg"></a>
-                          </div>
-                          <div class="col-md-8 col-sm-8 col-xs-8 blg-entry">
-                              <h6> <a href="single.html">Brgy. San Isidro Christmas Party for Kids</a></h6>
-                              <span class="property-price">December 22, 2015</span>
-                          </div>
-                      </li>
-                  </ul>
-          </div>
-      </div>
-
-        <div class="panel panel-default sidebar-menu wow fadeInRight animated">
-            <div class="panel-heading">
-                <h3 class="panel-title">Feedbacks</h3>
-            </div>
-            <div class="panel-body recent-property-widget">
-                        <ul>
-                        <li>
-                            <div class="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
-                                <a href="single.html"><img src="assets/img/client-face2.png"></a>
-                            </div>
-                            <div class="col-md-8 col-sm-8 col-xs-8 blg-entry">
-                                <h6> <a href="single.html">John Lennon</a></h6>
-                                <span class="property-price">Lorem ipsum dolor sit amet sapen etiam nuon amet dolor ac lorem epsud! :-)</span>
-                            </div>
-                        </li>
-                    </ul>
-            </div>
-        </div>  <div class="panel panel-default sidebar-menu wow fadeInRight animated">
-              <div class="panel-heading">
-                  <h3 class="panel-title">Followers</h3>
-              </div>
-              <div class="panel-body recent-property-widget">
-                          <ul>
-                          <li>
-                              <div class="col-md-3 col-sm-3 col-xs-3 blg-thumb p0">
-                                  <a href="single.html"><img src="assets/img/client-face2.png"></a>
-                              </div>
-                              <div class="col-md-8 col-sm-8 col-xs-8 blg-entry">
-                                  <h6> <a href="single.html">John Lennon</a></h6>
-                                  <span class="property-price">Lorem ipsum dolor sit amet sapen etiam nuon amet dolor ac lorem epsud! :-)</span>
-                              </div>
-                          </li>
-                      </ul>
-              </div>
-          </div>
-    </div>
-</div>
-
-<div class="col-md-9  pr0 padding-top-40 properties-page">
-    <div class="col-md-12 clear">
-      <h1>Upcoming Activities</h1>
-        <div class="col-xs-2 layout-switcher">
-            <a class="layout-list" href="javascript:void(0);"> <i class="fa fa-th-list"></i>  </a>
-            <a class="layout-grid active" href="javascript:void(0);"> <i class="fa fa-th"></i> </a>
-        </div><!--/ .layout-switcher-->
-    </div>
-    <div class="col-md-12 clear">
-        <div id="list-type" class="proerty-th">
-            <div class="col-sm-6 col-md-4 p0">
-                    <div class="box-two proerty-item">
-                        <div class="item-thumb">
-                            <a href="property-1.html" ><img src="assets/img/for project/3.jpg"></a>
-                        </div>
-
-                        <div class="item-entry overflow">
-                            <h5><a href="property-1.html"> Medical Mission </a></h5>
-                            <div class="dot-hr"></div>
-                            <span class="proerty-price pull-left"> September 20, 2017</span>
-                            <small class="pull-left"><b> Location: </b> Talamban Barangay Hall </small>
-
-                            <div class="property-icon">
-                                <center><button class="btn btn-success" id="readmore">Read More</button></center>
-                            </div>
-                        </div>
+                <div class="item-entry overflow">
+                    <h5><a href="property-1.html"> Medical Mission </a></h5>
+                    <div class="dot-hr"></div>
+                    <span class="pull-left"><b> Date:</b> December 8. 2017 </span>
+                    <span class="pull-left"><b>Location: </b>Nasipit, Talamban Cebu City Philippines</span>
+                    <div class="property-icon">
+                      <button class="btn btn-success">Read More</button>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 p0">
-                        <div class="box-two proerty-item">
-                            <div class="item-thumb">
-                                <a href="property-1.html" ><img src="assets/img/for project/1.jpg"></a>
-                            </div>
-
-                            <div class="item-entry overflow">
-                                <h5><a href="property-1.html"> ABS-CBN Relief Campaign </a></h5>
-                                <div class="dot-hr"></div>
-                                <span class="proerty-price pull-left"> February 20, 2018</span>
-                                <small class="pull-left"><b> Location: </b> Jagobiao St. Mandaue City </small>
-
-                                <div class="property-icon">
-                                    <center><button class="btn btn-success" id="readmore">Read More</button></center>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-        </div>
-    </div>
-
-    <div class="col-md-12">
-        <div class="pull-right">
-            <div class="pagination">
-                <ul>
-                    <li><a href="#">Prev</a></li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">Next</a></li>
-                </ul>
             </div>
         </div>
     </div>
-</div>
-</div>
-</div>
+  </div>
+  <div class="col-md-4">
+    <h2>Feedbacks</h2>
+  </div>
+  <div class="col-md-4">
+    <h3>Calendar</h3>
+    <div id='calendar' class='col-sm-12'></div>
+    <h3>Past Activities</h3>
+  </div>
 </div>
 
+<!--MODAL-->
+<form id="add">
+			<div class="modal fade" tabindex="-1" role="dialog" id="addevent" aria-labelledby="gridSystemModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h3 class="modal-title">Add A New Event <span class="glyphicon glyphicon-calendar"></h3>
+						</div>
+						<div class="modal-body">
+							<div class='row'>
+								<div class='col-sm-6'>
+									<span class='input-title'>Event Name:</span>
+								</div>
+							</div>
+							<div class='row'>
+								<div class='col-sm-9'>
+									<input type='text' class='form-control' name='eventname' id='event'>
+								</div>
+							</div>
+							<div class='row'>
+								<div class='col-sm-6'>
+									<span class='input-title'>Date:</span>
+								</div>
+							</div>
+							<div class='row'>
+								<div class='col-sm-4'>
+									<input type='text' class='form-control' name='startdate' id="startdate">
+								</div>
+								<div class='col-sm-1'>
+									<span>to</span>
+								</div>
+								<div class='col-sm-4'>
+									<input type='text' class='form-control' name='enddate' id="enddate">
+								</div>
+							</div>
+							<div class='row'>
+								<div class='col-sm-6'>
+									<span class='input-title'>Time:</span>
+								</div>
+							</div>
+							<div class='row'>
+								<div class='col-sm-4'>
+									<input type='time' class='form-control' name='starttime' id="starttime">
+								</div>
+								<div class='col-sm-1'>
+									<span>to</span>
+								</div>
+								<div class='col-sm-4'>
+									<input type='time' class='form-control' name='endtime' id="endtime">
+								</div>
+							</div>
+							<div class='row'>
+								<div class='col-sm-6'>
+									<span class='input-title'>Color</span>
+								</div>
+							</div>
+							<div class='row'>
+								<div class='col-sm-6'>
+									<select name="color" id="eventColor" class='form-control'>
+										<option></option>
+										<option id = "red"value="#F65314">Red</option>
+										<option value="#FAE03C">Yellow</option>
+										<option value="#FFBB00">Orange</option>
+										<option value="#7CBB00">Green</option>
+										<option value="#F7786B">Pink</option>
+										<option value="#8a2be2">Purple</option>
+										<option value="#a6a6ed">Lavender</option>
+										<option value="#45B8AC">Turquoise</option>
+									</select>
+								</div>
+							</div>
+							<div class='row'>
+								<div class='col-sm-6'>
+									<span class='input-title'>Details:</span>
+								</div>
+							</div>
+							<div class='row'>
+								<div class='col-sm-9'>
+									<textarea class='form-control' rows="4" cols="50" id="eventdetails" name="eventdetails"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-primary" data-dismiss="modal" id="submit">Add Event</button>
+							<button class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+<!--END OF MODAL-->
 
+</body>
+</html>
 
 
 <script src="assets/js/modernizr-2.6.2.min.js"></script>
@@ -232,5 +203,3 @@
 <script src="assets/js/icheck.min.js"></script>
 <script src="assets/js/price-range.js"></script>
 <script src="assets/js/main.js"></script>
-</body>
-</html>
