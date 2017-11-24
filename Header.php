@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title> AMBOT | Home page</title>
-  <meta name="description" content="GARO is a real-estate template">
-  <meta name="author" content="Kimarotec">
+  <meta name="description" content="Web Portal for local volunteers">
+  <meta name="author" content="">
   <meta name="keyword" content="html5, css, bootstrap, property, real-estate theme , bootstrap template">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -58,7 +58,7 @@
         <ul class="main-nav nav navbar-nav navbar-right">
         	<li class="wow fadeInDown"><a class="" href="index.php">Home</a></li>
         	<li class="wow fadeInDown"><a class="" href="">About Us</a></li>
-        	<li class="wow fadeInDown"><a class="" href="">Events</a></li>
+        	<li class="wow fadeInDown"><a class="" href="events.php">Events</a></li>
         	<li class="wow fadeInDown"><a class="" href="">Organizations</a></li>
         </ul>
     </div>
