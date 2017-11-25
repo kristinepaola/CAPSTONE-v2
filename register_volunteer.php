@@ -73,8 +73,9 @@
                       <div class="col-sm-3 col-sm-offset-1">
                           <div class="picture-container">
                               <div class="picture">
-                                  <img src="assets/img/avatar.png" class="picture-src" id="wizardPicturePreview" title=""/>
-                                  <input type="file" name ="profilePicture" id="wizard-picture">
+                                <img src="assets/img/avatar.png" class="picture-src" id="wizardPicturePreview" title=""/>
+                                <input type="file" name ="profilePicture" id="wizard-picture">
+
                               </div>
                               <h6>Choose Picture</h6>
                           </div>
@@ -84,21 +85,21 @@
 
                           <div class="form-group">
                               <label>First Name <small>(required)</small></label>
-                              <input name="firstName" type="text" class="form-control" placeholder="Andrew...">
+                              <input name="firstName" type="text" class="form-control">
                           </div>
                           <div class="form-group">
-                              <label>Password <small>(required)</small></label>
-                              <input name="password" type="password" class="form-control">
+                            <label>Last Name <small>(required)</small></label>
+                            <input name="lastName" type="text" class="form-control">
                           </div>
                           <div class="form-group">
                               <label>Email <small>(required)</small></label>
-                              <input name="emailAdd" type="email" class="form-control" placeholder="andrew@email@email.com">
+                              <input name="emailAdd" type="email" class="form-control">
                           </div>
                       </div>
                       <div class="col-sm-4 padding-top-25">
                         <div class="form-group">
-                            <label>Last Name <small>(required)</small></label>
-                            <input name="lastName" type="text" class="form-control" placeholder="Smith...">
+                            <label>Password <small>(required)</small></label>
+                            <input name="password" type="password" class="form-control">
                         </div>
 
                           <div class="form-group">
@@ -140,7 +141,21 @@
 <script src="assets/js/wizard.js"></script>
 
 <script src="assets/js/main.js"></script>
-
-
+<script>
+  $(document).ready(function(){
+    var imageName = $("#wizard-picture").val();
+    if (imageName == ""){
+      alert("Please select an image");
+      return false;
+    }else{
+      var extension = $("#wizard-picture").val().split(".").pop().toLowerCase();
+      if (jQuery.inArray(extension, ['gif', 'png', 'jpg', 'jpeg']) == -1){
+        alert ("Invalid Image File");
+        $("#wizard-picture").val("");
+        return false;
+      }
+    }
+  });
+</script>
 </body>
 </html>
