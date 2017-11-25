@@ -7,7 +7,7 @@
     <head>
          <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>GARO ESTATE | Home page</title>
+        <title>WEB PORTAL | Home page</title>
         <meta name="description" content="company is a real-estate template">
         <meta name="author" content="Kimarotec">
         <meta name="keyword" content="html5, css, bootstrap, property, real-estate theme , bootstrap template">
@@ -48,7 +48,7 @@
         <nav class="navbar navbar-default ">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
+                <!-- <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
@@ -56,18 +56,15 @@
                         <span class="icon-bar"></span>
                     </button>
 
-                </div>
+                </div> -->
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
+
                   <div class="collapse navbar-collapse yamm" id="navigation">
+
                       <div class="button navbar-right">
-                        <div class="col-md-3 blg-thumb p0">
-                        <img src="1.2.jpg" height="5" width="130"></a>
-                        </div>
-                        <div class="col-md-8 blg-entry">
-                            <h6> <a href="single.html">Mary Eunice</a></h6>
-                            <img src="mail.png" height="5" width="30"></a>
-                        </div>
+                          <button class="navbar-btn nav-button wow bounceInRight login" onclick=" window.open('register.html')" data-wow-delay="0.4s">Login</button>
+                          <button class="navbar-btn nav-button wow fadeInRight" onclick=" window.open('submit-property.html')" data-wow-delay="0.5s">Submit</button>
                       </div>
                       <ul class="main-nav nav navbar-nav navbar-right">
                           <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="AboutUs.html">About Us</a></li>
@@ -86,112 +83,31 @@
         </nav>
         <!-- End of nav bar -->
 
-        <!--<div class="section">
-            <div id="list-type" class="proerty-th-list">
-                <div class="col-md-4 p0">
-                    <div class="box-two proerty-item">
-                        <div class="item-thumb">
-                          <img src="assets/img/demo/property-3.jpg">
-                        </div>
-                        <div class="item-entry overflow">
-                            <h2> Mary Eunice Valenzuela</h2>
-                            <div class="dot-hr"></div>
-                            <span class="pull-left"></span>
-                            <p style="display: none;">sfsfdsf</p>
-                            <div class="property-icon">
-                              <h3>Personal Advocates</h3>
-                                <img src="assets/img/icon/bed.png">(5)|
-                                <img src="assets/img/icon/shawer.png">(2)|
-                                <img src="assets/img/icon/cars.png">(1)
-
-                                <div class="dealer-action pull-right">
-                                    <a href="submit-property.html" class="button">Edit </a>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-              </div>-->
-
-
         <div class="page-head">
           <div class="col-sm-3 col-sm-offset-1">
-            <p>
-              <p>
+            <!--logo of the Organization-->
               <div class="picture-container">
                   <div class="picture">
-                    <b>  <img src="1.2.jpg" width="170" height="170">
-                      <div class="col-md-3" >
-                      </b>
+                      <img src="#" width="170" height="140" style="float:left">
+                      <div class="col-md-6" >
                   </div>
                 </div>
               </div>
             </div>
-          </p>
-        </p>
-        <h2> Mary Eunice Valenzuela</h2>
-        <h3>Anashsfwiweweifwbie </h3>
-        <div class="col-md-3 ">
-        <div class="blog-asside-left">
-            <div class="dealer-action pull-right">
-                <a href="submit-property.html" class="button">Edit </a>
-            </div>
-        </div>
-    </div>
-  </div>
-</div>
-</div>
-<div class="col-md-3 ">
-      <div class="blog-asside-center">
-          <div class="panel panel-default sidebar-menu wow fadeInRight animated">
-              <div class="panel-heading">
-                  <h3 class="panel-title">Personal Advocacies</h3>
-              </div>
-              <div class="panel-body recent-property-widget">
-                  <ul>
-                      <li>
-                          <div class="col-md-3 blg-thumb p0">
-                              <a href="single.html"><img src="assets/img/demo/small-property-2.jpg"></a>
-                              <span class="property-seeker">
-                                  <b class="b-1">A</b>
-                                  <b class="b-2">S</b>
-                              </span>
-                          </div>
-                          <div class="col-md-8 blg-entry">
-                              <h6> <a href="single.html">Super nice villa </a></h6>
-                              <span class="property-price">3000000$</span>
-                          </div>
-                      </li>
-                    </div>
-                  </div>
-                </div>
-              </div>
-    <div class="row">
-  </div>
+              <!--user description-->
+              <div class="col-md-5" >
+                <h2>PROFILE PAGE</h2>
 
-            <!--  <div class="col-md-3 ">
+              </div>
+
+              <!--end user description-->
+              <div class="col-md-3 ">
                   <div class="blog-asside-center">
                       <div class="panel panel-default sidebar-menu wow fadeInRight animated">
                           <div class="panel-heading">
-                              <h3 class="panel-title">Personal Advocacies</h3>
+                              <h2 class="panel-title">MISSION</h2>
                           </div>
                           <div class="panel-body recent-property-widget">
-                              <ul>
-                                  <li>
-                                      <div class="col-md-3 blg-thumb p0">
-                                          <a href="single.html"><img src="assets/img/demo/small-property-2.jpg"></a>
-                                          <span class="property-seeker">
-                                              <b class="b-1">A</b>
-                                              <b class="b-2">S</b>
-                                          </span>
-                                      </div>
-                                      <div class="col-md-8 blg-entry">
-                                          <h6> <a href="single.html">Super nice villa </a></h6>
-                                          <span class="property-price">3000000$</span>
-                                      </div>
-                                  </li>
                                 </div>
                               </div>
                             </div>
@@ -206,7 +122,10 @@
             </div>
         </div>
       </div>
-    </div> -->
+    </div>
+        <!-- End page header -->
+
+        <!-- property area -->
         <div class="content-area recent-property padding-top-40" style="background-color: #FFF;">
             <div class="container">
 
@@ -215,30 +134,65 @@
                     <div class="" id="contact1">
                         <div class="row">
                             <div class="col-sm-6">
-                                <h2> UPCOMING ACTIVITIES </h2>
-                                <img src="red.png" alt="Red Cross" width="250" height="250">
-                                <p><h3>Res Cross Medical Mission </h3> </p>
-                                    <strong>READ MORE</strong>
-                                </p>
+                                <h2> <strong>UPCOMING ACTIVITIES</strong> </h2>
+                                <img src="red.png" alt="Red Cross" width="170" height="170">
+                                <h6><strong>--NAME OF ACTIVITY--</strong></h6>
+                                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#readMore" >READ MORE</button>
+                                  <!--MODAL-->
+                                  <div class="modal fade" id="readMore" role="dialog">
+                                    <div class="modal-dialog">
+
+                                      <!--Modal Content-->
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          <h4 class="modal-title" img src="givefeedback.png" alt="bulb"><strong>ACTIVITY</strong></h4>
+                                        </div>
+                                        <div class="modal-body">
+                                          <h6>MEDICAL MISSION:</h6>
+                                          <h6><strong>WHEN:</strong></h6>
+                                          <h6><strong>WHAT WE NEED:</strong></h6>
+                                          <h6><strong>WHAT TO BRING:</strong></h6>
+                                        </div>
+                                        <button type="button" class="btn btn-danger">PRE-REGISTER</button>
+                                        <button type="button" class="btn btn-danger">VOLUNTEER YOUR RESOURCES</button>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
                             </div>
                             <!-- /.col-sm-4 -->
                             <div class="col-sm-5">
-                                <h2></i> RECENT ACTIVITIES </h2>
+                                <h2><strong>RECENT ACTIVITIES</strong> </h2>
                                 <img src="feeding.png" alt="feeding" width="170" height="170">
-                                <p><strong>Feeding Program</strong></p>
-                                <p> Location: Brgy. Kasambagan </p>
-                                <p> Date: June 29, 2017 </p>
+                                <p><strong>Sample Event</strong></p>
+                                <p> Location: </p>
+                                <p> Date: </p>
+                                <button type="button" class="btn btn-success"  data-toggle="modal" data-target="#feedback"> GIVE FEEDBACK!!</button>
+                                  <div class="modal fade" id="feedback" role="dialog">
+                                    <div class="modal-dialog">
+                                      <!--Modal Content-->
+                                      <div class="modal-content">
+                                        <div modal="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal">&times; </button>
+                                          <h4 class="modal-title"><strong>Give Feedback!</strong></h4>
+                                      </div>
+                                      <div class="modal-body">
+                                        <textarea row="4" cols="50" name="comment" placeholder="Enter your comment..."></textarea>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
+                                      </div>
+                                    </div>
+                                  </div>
 
-                                <img src="treePlanting.png" alt="tree planting" width="170" height="170">
-                                <p><strong> Tree Planting </strong> </p>
-                                <p> Location: Brgy. Talamban </p>
-                                <p> Date: April 15, 2017 </p>
-                                </p>
                             </div>
                             <!-- /.col-sm-4 -->
                             <!-- /.col-sm-4 -->
                         </div>
-                        </form>
+
                     </div>
                 </div>
                 <!-- /.col-md-9 -->
@@ -247,26 +201,15 @@
                     <div class="blog-asside-center">
                         <div class="panel panel-default sidebar-menu wow fadeInRight animated">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Organizations</h3>
+                                <h3 class="panel-title">FEEDBACKS</h3>
                             </div>
                             <div class="panel-body recent-property-widget">
                                 <ul>
                                     <li>
                                         <div class="col-md-3 blg-thumb p0">
-                                            <img src="red.png">
                                         </div>
                                         <div class="col-md-8 blg-entry">
-                                            <h6> <a href="OrgProfileHERE.html">Red Cross </a></h6>
-                                            <span class="property-price">Cebu City</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="col-md-3 blg-thumb p0">
-                                            <img src="feeding.png">
-                                        </div>
-                                        <div class="col-md-8 blg-entry">
-                                            <h6> <a href="OrgProfileHERE.html">Feeding Org </a></h6>
-                                            <span class="property-price">Cebu City</span>
+                                            <h3>LIST OF FEEDBACKS</h3>
                                         </div>
                                     </li>
                         </div>
