@@ -53,7 +53,7 @@
     <div class="collapse navbar-collapse yamm" id="navigation">
         <div class="button navbar-right">
             <a href="login.php"><button class="navbar-btn nav-button wow bounceInRight login" id="login">Login</button></a>
-            <a href="register_organization.php"><button class="navbar-btn nav-button wow fadeInRight" id="register" >Register</button></a>
+            <button class="navbar-btn nav-button wow fadeInRight" id="register" >Register</button>
         </div>
         <ul class="main-nav nav navbar-nav navbar-right">
         	<li class="wow fadeInDown"><a class="" href="index.php">Home</a></li>
@@ -64,6 +64,28 @@
     </div>
   </div>
 </nav>
+<!-- MODAL FOR REGISTRATION -->
+<div id="registeroption" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="info-text">Register Now!</h3>
+        </div>
+        <div class="modal-body">
+          <div class="row" style="margin:6px;">
+            <center><a href="register_volunteer.php"><button class="btn btn-warning" id="volunteer">Register as a Volunteer</button></a></center>
+          </div>
+          <div class="row" style="margin:6px;">
+            <center><a href="register_organization.php"><button class="btn btn-warning" id="organization">Register as an Organization</button></a></center>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  </div>
+</div>
 </body>
 </html>
 <script src="assets/js/jquery-1.10.2.min.js"></script>
@@ -73,7 +95,7 @@
 
 	$(document).ready(function(){
 		$("#register").on("click", function(){
-			$("#signUp").modal();
+			$("#registeroption").modal();
 		});
 
 		$("#login").on("click", function(){
