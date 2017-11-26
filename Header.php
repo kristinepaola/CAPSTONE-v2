@@ -74,10 +74,10 @@
         </div>
         <div class="modal-body">
           <div class="row" style="margin:6px;">
-            <center><a href="register_volunteer.php"><button class="btn btn-warning" id="volunteer">Register as a Volunteer</button></a></center>
+            <center><a href="volunteer/register_volunteer.php"><button class="btn btn-warning" id="volunteer">Register as a Volunteer</button></a></center>
           </div>
           <div class="row" style="margin:6px;">
-            <center><a href="register_organization.php"><button class="btn btn-warning" id="organization">Register as an Organization</button></a></center>
+            <center><a href="organization/register_organization.php"><button class="btn btn-warning" id="organization">Register as an Organization</button></a></center>
           </div>
         </div>
         <div class="modal-footer">
@@ -88,8 +88,8 @@
 </div>
 </body>
 </html>
-<script src="assets/js/jquery-1.10.2.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/js/jquery-1.10.2.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
 
 <script>
 
