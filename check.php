@@ -4,7 +4,7 @@
 
 <?php
 session_start();
-include('sql_conn.php');
+include('sql_connect.php');
 
 $id = $_POST['id'];
 

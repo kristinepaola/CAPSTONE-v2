@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <?php include ('Header.php');?>
-
     <body>
         <div class="slider-area">
             <div class="slider">
@@ -18,10 +16,7 @@
                 </div>
             </div>
         </div>
-
-
-
-
     </body>
-
 </html>
+<script src="../assets/js/jquery-1.10.2.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>

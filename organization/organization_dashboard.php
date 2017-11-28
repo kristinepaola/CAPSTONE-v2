@@ -48,7 +48,7 @@
 
 <!--End top header -->
 
-<?php include ("Header.php"); ?>
+<?php include ("../Header.php"); ?>
 <!-- End of nav bar -->
 
 <div class="col-md-12">

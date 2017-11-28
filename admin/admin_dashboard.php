@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php include ('Header.php');?>
+<?php include ('../Header.php');?>
     <br><br>
       <div class="text-center">
             <button href="admin_dashboard.php" type="submit" class="btn btn-default">Dashboard</button>
@@ -39,6 +39,6 @@
                   </div>
             </div>
       </div>
-        <?php include ('Footer.php');?>
+
     </body>
 </html>

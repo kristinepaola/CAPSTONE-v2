@@ -52,7 +52,7 @@
 
     <div class="collapse navbar-collapse yamm" id="navigation">
         <div class="button navbar-right">
-            <a href="login.php"><button class="navbar-btn nav-button wow bounceInRight login" id="login">Login</button></a>
+            <a href="/capstone/CAPSTONE-v2/login.php"><button class="navbar-btn nav-button wow bounceInRight login" id="login">Login</button></a>
             <button class="navbar-btn nav-button wow fadeInRight" id="register" >Register</button>
         </div>
         <ul class="main-nav nav navbar-nav navbar-right">
@@ -81,11 +81,12 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
         </div>
       </div>
   </div>
 </div>
+
 </body>
 </html>
 <script src="../assets/js/jquery-1.10.2.min.js"></script>
@@ -95,11 +96,7 @@
 
 	$(document).ready(function(){
 		$("#register").on("click", function(){
-			$("#registeroption").modal();
-		});
-
-		$("#login").on("click", function(){
-			$("#logIn").modal();
+      $("#registeroption").modal();
 		});
 	});
 

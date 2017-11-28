@@ -69,7 +69,7 @@
 </script>
 
   <!-- Footer area-->
-<?php include("Footer.php") ?>
+
 
 </body>
 </html>

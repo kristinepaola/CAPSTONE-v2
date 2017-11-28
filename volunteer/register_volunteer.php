@@ -38,7 +38,7 @@
 <body>
 
 
-<?php include ("../Header.php"); ?>
+<?php require ("../Header.php"); ?>
 <!-- End of nav bar -->
 <div class="page-head" align="center">
   <div class="container">
