@@ -120,7 +120,7 @@
           <h3 class="info-text">ABS CBN Relief Campaign</h3>
         </div>
         <div class="modal-body">
-          
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
