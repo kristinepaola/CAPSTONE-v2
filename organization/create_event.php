@@ -161,7 +161,11 @@
 <script src="../assets/js/main.js"></script>
 
 <script>
-  
+$(document).ready(function(){
+  $("#addfield").on("click", function(){
+    $("#eventsreadmore").modal();
+  });
+});
 </script>
 
 </body>
