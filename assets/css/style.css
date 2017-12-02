@@ -200,8 +200,10 @@ input[type="search"]::-webkit-search-decoration {
     border-color: #2CA8FF;
 }
 .btn-success{
-    color: #05AE0E;
-    border-color: #05AE0E;
+    color: #5cb85c;
+    background-color: #5cb85c;s
+    border-color: #5cb85c;
+
 }
 .btn-warning{
     color: #FDC600;
