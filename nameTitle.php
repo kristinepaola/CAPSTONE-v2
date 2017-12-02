@@ -21,6 +21,9 @@
                   </div>
                   <div class="col-md-8 blg-entry">
                       <h6> <a href="single.html">Mary Eunice</a></h6>
+                      <a href="#">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                      </a>
                       <img src="mail.png" height="5" width="30"></a>
                   </div>
                 </div>

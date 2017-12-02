@@ -103,18 +103,21 @@ tr:nth-child(even) {
     <td>Sound System</td>
     <td>1</td>
     <td>The sound system will be...</td>
+    <td></td>
     <td>Feeding Program</td>
   </tr>
   <tr>
     <td>Tables and Chairs</td>
     <td>15</td>
     <td>The tables and chairs are for the medical staff that took part to the event.</td>
+    <td></td>
     <td>Blood Donation</td>
   </tr>
   <tr>
     <td>Garden Equipment</td>
     <td>2</td>
     <td>The garden equipment are for the volunteers that took part of the event</td>
+    <td></td>
     <td>Mangroove Planting</td>
   </tr>
 </table>

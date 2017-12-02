@@ -47,7 +47,6 @@
 
           <?php
           include ('nameTitle.php');
-
           ?>
 
           <div class="page-head">
@@ -70,7 +69,7 @@
           <h3>Location: Lapu-lapu City </h3>
           <h3>Schedule: Weekends, 3-4 PM </h3>
         </b>
-        <td id='td9".$counter."'><input type='button' class='btn btn-success btn-xs' id='edit".$counter."' onclick='getEdit(".$counter.")' value='Edit'></td>
+        <a href="editProfile.php">Edit</a>
         </div>
         <div class="col-md-3 ">
         <div class="blog-asside-center">
