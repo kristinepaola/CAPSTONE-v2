@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php require ("sql_connect.php"); ?>
+<?php require ("../sql_connect.php"); ?>
 
 <html class="no-js">
 <head>
@@ -38,90 +38,106 @@
 <body>
 
 
-<?php include ("Header.php"); ?>
+<?php include ("../Header.php"); ?>
 <div class="content-area user-profiel" style="background-color: #FCFCFC;">&nbsp;
-  <div class="container">
-      <div class="row">
-          <div class="col-sm-10 col-sm-offset-1 profiel-container">
+<div class="container">
+<div class="row">
+<div class="col-sm-10 col-sm-offset-1 profiel-container">
 
-              <form action="insertvolunteer.php" method="POST" enctype="multipart/form-data">
-                  <div class="profiel-header">
-                      <h3>
-                          <b>CREATE</b> AN EVENT <br>
+<form action="insertvolunteer.php" method="POST" enctype="multipart/form-data">
+<div class="profiel-header">
+<h3>
+    <b>CREATE</b> AN EVENT <br>
 
-                      </h3>
-                      <hr>
-                  </div>
+</h3>
+<hr>
+</div>
 
-                  <div class="clear">
-                      <div class="col-sm-12 padding-top-25">
-                          <div class="col-sm-5 padding-top-25">
-                            <div class="form-group">
-                                <label>Event Title <small>(required)</small></label>
-                                <input name="eventTitle" type="text" class="form-control" >
-                            </div>
-                          </div>
-                          <div class="col-sm-4 padding-top-25">
-                            <div class="form-group">
-                                <label>Location<small>(required)</small></label>
-                                <input name="eventTitle" type="text" class="form-control" >
-                            </div>
-                          </div>
-                      </div>
-                      <div class="col-sm-12 padding-top-25">
-                          <div class="col-sm-5 padding-top-25">
-                            <div class="form-group">
-                                <label>Start <small>(required)</small></label>
-                                <input name="start" type="date" class="form-control" >
-                            </div>
-                          </div>
-                          <div class="col-sm-5 padding-top-25">
-                            <div class="form-group">
-                                <label>End<small>(required)</small></label>
-                                <input name="end" type="date" class="form-control" >
-                            </div>
-                          </div>
-                      </div>
-                      <div class="col-sm-12 padding-top-25">
-                          <div class="col-sm-3 padding-top-25">
-                            <div class="form-group">
-                                <label>Age Requirement <small>(required)</small></label>
-                                <input name="ageReq" type="text" class="form-control" >
-                            </div>
-                          </div>
-                          <div class="col-sm-4 padding-top-25">
-                            <div class="form-group">
-                                <label>Gender Requirement<small>(required)</small></label>
-                                <input name="genderReq" type="text" class="form-control" >
-                            </div>
-                          </div>
-                      </div>
-                      <div class="col-sm-12 padding-top-25">
-                          <div class="col-sm-3 padding-top-25">
-                            <div class="form-group">
-                                <label>No. of Volunteers <small>(required)</small></label>
-                                <input name="nVolunteers" type="number" class="form-control" >
-                                <div class="col-sm-12 padding-top-25" style="padding-left:50px">
-                                  <label>Occupation <small>(required)</small></label>
-                                  <input name="occupation" type="text" class="form-control" >
-                                </div>
-                            </div>
-                          </div>
-                      </div>
-
-
-                  </div>
-
-
-                  <div class="col-sm-5 col-sm-offset-1" align="right">
-                      <br>
-                      <input type='submit' class='btn btn-finish btn-primary' name='signup' value='SIGN UP' />
-                  </div>
-                  <br>
-          </form>
-
+<div class="clear">
+<div class="col-sm-12 padding-top-25">
+    <div class="col-sm-5 padding-top-25">
+      <div class="form-group">
+          <label>Event Title <small>(required)</small></label>
+          <input name="eventTitle" type="text" class="form-control" >
       </div>
+    </div>
+    <div class="col-sm-4 padding-top-25">
+      <div class="form-group">
+          <label>Location<small>(required)</small></label>
+          <input name="eventTitle" type="text" class="form-control" >
+      </div>
+    </div>
+</div>
+<div class="col-sm-12 padding-top-25">
+    <div class="col-sm-5 padding-top-25">
+      <div class="form-group">
+          <label>Start <small>(required)</small></label>
+          <input name="start" type="datetime-local" class="form-control">
+      </div>
+    </div>
+    <div class="col-sm-5 padding-top-25">
+      <div class="form-group">
+          <label>End<small>(required)</small></label>
+          <input name="end" type="datetime-local" class="form-control">
+      </div>
+    </div>
+</div>
+<div class="col-sm-12 padding-top-25">
+    <div class="col-sm-3 padding-top-25">
+      <div class="form-group">
+          <label>Age Requirement <small>(required)</small></label>
+          <input name="ageReq" type="text" class="form-control" >
+      </div>
+    </div>
+    <div class="col-sm-4 padding-top-25">
+      <div class="form-group">
+          <label>Gender Requirement<small>(required)</small></label>
+          <input name="genderReq" type="text" class="form-control" >
+      </div>
+    </div>
+</div>
+<div class="col-sm-12 padding-top-25">
+    <div class="col-sm-3 padding-top-25">
+      <div class="form-group">
+          <label>No. of Volunteers <small>(required)</small></label>
+          <input name="nVolunteers" type="number" class="form-control" style="width:90px;">
+      </div>
+    </div>
+</div>
+<div class="col-sm-12 padding-top-25" style="padding-left:50px">
+  <div>
+    <label>Occupation <small>(required)</small></label>
   </div>
+  <div class="col-sm-3 padding-top-25">
+    <input name="occupation" type="text" class="form-control" style="width:250px;" id="occupation">
+  </div>
+  <div class="col-sm-1 padding-top-25">
+    <input name="nVolunteersOccupation" type="number" class="form-control" style="width:50px;" id="nVolunteersOccupation">
+  </div>
+  <div class="col-sm-1 padding-top-25">
+    <button class="btn btn-success"><span class="glyphicon glyphicon-plus" id="addfield"></span></button>
+  </div>
+  <div class="col-sm-3 padding-top-25"></div>
+  <div class="col-sm-1 padding-top-25"></div>
+  <div class="col-sm-1 padding-top-25"></div>
+</div>
+      </div>
+    </div>
+</div>
+
+
+</div>
+
+
+<div class="col-sm-5 col-sm-offset-1" align="right">
+<br>
+<input type='submit' class='btn btn-finish btn-primary' name='signup' value='SIGN UP' />
+</div>
+<br>
+</form>
+
+</div>
+</div>
 
 </div>
 </div>
@@ -144,7 +160,9 @@
 
 <script src="../assets/js/main.js"></script>
 
-
+<script>
+  
+</script>
 
 </body>
 </html>
