@@ -66,17 +66,7 @@
 
                         <div class="wizard-card ct-wizard-orange" id="wizardProperty">
                             <form action="" method="">
-
-                                <ul>
-                                    <li><a href="#step1" data-toggle="tab"></a></li>
-                                    <li><a href="#step2" data-toggle="tab"></a></li>
-                                    <li><a href="#step3" data-toggle="tab"></a></li>
-                                    <li><a href="#step4" data-toggle="tab"></a></li>
-                                </ul>
-
                                 <div class="tab-content">
-
-                                    <div class="tab-pane" id="step1">
                                         <div class="row p-b-15  ">
                                             <div class="col-sm-4 col-sm-offset-1">
                                                 <div class="picture-container">
@@ -88,21 +78,26 @@
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group">
-                                                    <label>Property name <small>(required)</small></label>
-                                                    <input name="propertyname" type="text" class="form-control" placeholder="Super villa ...">
+                                                    <label>First Name </label>
+                                                    <input name="firstName" type="text" class="form-control">
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <label>Property price <small>(required)</small></label>
-                                                    <input name="propertyprice" type="text" class="form-control" placeholder="3330000">
+                                                    <label>Last Name </label>
+                                                    <input name="lastName" type="text" class="form-control">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label>Telephone <small>(empty if you wanna use default phone number)</small></label>
-                                                    <input name="phone" type="text" class="form-control" placeholder="+1 473 843 7436">
+                                                    <label>Address </label>
+                                                    <input name="address" type="text" class="form-control">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Schedule </label>
+                                                    <input name="lastName" type="text" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <a href="volunteerProfile.php">Save</a>
                                     <!--  End step 1 -->
 
 

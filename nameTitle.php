@@ -20,7 +20,7 @@
                   <img src="1.2.jpg" height="5" width="130"></a>
                   </div>
                   <div class="col-md-8 blg-entry">
-                      <h6> <a href="single.html">Mary Eunice</a></h6>
+                      <h6> <a href="volunteerProfile.php">Mary Eunice</a></h6>
                       <a href="#">
                         <span class="glyphicon glyphicon-envelope"></span>
                       </a>
