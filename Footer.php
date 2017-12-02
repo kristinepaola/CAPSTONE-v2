@@ -6,6 +6,7 @@
             <div class=" footer">
                 <div class="container">
                     <div class="row">
+
                         <div class="col-md-3 col-sm-6 wow fadeInRight animated">
                             <div class="single-footer">
                                 <h4>About us </h4>
@@ -20,6 +21,7 @@
                                 </ul>
                             </div>
                         </div>
+
                         <div class="col-md-3 col-sm-6 wow fadeInRight animated">
                             <div class="single-footer news-letter">
                                 <h4>Stay in touch</h4>
@@ -34,13 +36,13 @@
                                         </span>
                                     </div>
                                     <!-- /input-group -->
-                                </form> 
+                                </form>
 
-                                <div class="social pull-right"> 
+                                <div class="social pull-right">
                                     <ul>
                                         <li><a class="wow fadeInUp animated" href="https://www.facebook.com/kimarotec" data-wow-delay="0.2s"><i class="fa fa-facebook"></i></a></li>
                                         <li><a class="wow fadeInUp animated" href="https://plus.google.com/kimarotec" data-wow-delay="0.3s"><i class="fa fa-google-plus"></i></a></li>
-                                    </ul> 
+                                        </ul>
                                 </div>
                             </div>
                         </div>
@@ -48,11 +50,28 @@
                     </div>
                 </div>
             </div>
+
+            <div class="footer-copy text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="pull-left">
+                            <span> (C) <a href="http://www.KimaroTec.com"></a> , All rights reserved 2016  </span>
+                        </div>
+                        <div class="bottom-menu pull-right">
+                            <ul>
+                                <li><a class="wow fadeInUp animated" href="#" data-wow-delay="0.2s">Home</a></li>
+                                <li><a class="wow fadeInUp animated" href="#" data-wow-delay="0.6s">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <script src="assets/js/modernizr-2.6.2.min.js"></script>
 
-        <script src="assets/js/jquery-1.10.2.min.js"></script> 
+        <script src="assets/js/jquery-1.10.2.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/bootstrap-select.min.js"></script>
         <script src="assets/js/bootstrap-hover-dropdown.js"></script>
