@@ -27,13 +27,17 @@
 <link rel="stylesheet" href="../assets/css/wizard.css">
 <link rel="stylesheet" href="../assets/css/style.css">
 <link rel="stylesheet" href="../assets/css/responsive.css">
-</head>
 
 <style>
-  .organization_dashboard{
-    background-color: #ffffff;
+  .modalimg{
+    width: 60px;
+    height: 60px;
+    border: solid 1px;
   }
 </style>
+</head>
+
+
 <body>
 
 <?php include ("../Header.php"); ?>
@@ -107,47 +111,30 @@
 
 </div>
 <!-- READ MORE MODAL-->
-<div id="eventsreadmore" class="modal fade" role="dialog">
+<div class="modal fade" id="eventsreadmore" role="dialog">
   <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h3 class="info-text">ABS CBN Relief Campaign</h3>
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">ABS CBN Relief Campaign</h4>
+      </div>
+      <div class="modal-body">
+        <div class="col-md-6">
+          <img src="../assets/img/forproject/1.jpg" class="modalimg"> 
         </div>
-        <div class="modal-body">
-            <div class="col-md-12">
-                <div class="col-md-6">
-                  <img>
-                  <h5>HOW TO GET THERE</h5>
-                </div>
-                <div class="col-md-6">
-                  <div class="row">
-                    <h5>WHEN</h5>
-                  </div>
-                  <div class="row">
-                    <span>September 20, 2017</span>
-                  </div>
-                  <div class="row">
-                    <h5>WHAT WE NEED</h5>
-                  </div>
-                  <div class="row">
-                    <span>Doctors, Dentists, Nurses</span>
-                  </div>
-                  <div class="row">
-                    <h5>WHAT TO BRING</h5>
-                  </div>
-                  <div class="row">
-                    <span>Medicines, Medical Supplies</span>
-                  </div>
-              </div>
-            </div>
-            </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
+        <div class="col-md-6">
         </div>
       </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
   </div>
+</div>
+
 </div>
 <!--END OF MODAL-->
 </body>

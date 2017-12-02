@@ -37,7 +37,6 @@
 </head>
 <body>
 
-
 <?php require ("../Header.php"); ?>
 <!-- End of nav bar -->
 <div class="page-head" align="center">
