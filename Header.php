@@ -65,7 +65,7 @@
   </div>
 </nav>
 <!-- MODAL FOR REGISTRATION -->
-<div id="registeroption" class="modal fade" role="dialog">
+<div id="regmodal" class="modal fade" role="dialog">
   <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -89,15 +89,12 @@
 
 </body>
 </html>
-<script src="../assets/js/jquery-1.10.2.min.js"></script>
-<script src="../bootstrap/js/bootstrap.min.js"></script>
-
+<script src="assets/js/jquery-1.10.2.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 <script>
-
-	$(document).ready(function(){
-		$("#register").on("click", function(){
-      $("#registeroption").modal();
-		});
-	});
-
+  $(document).ready(function(){
+    $("#register").on("click", function(){
+      $("#regmodal").modal();
+    });
+  });
 </script>

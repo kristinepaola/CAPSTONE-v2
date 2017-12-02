@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js"> <!--<![endif]-->
+<html class="no-js">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +11,6 @@
 
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
 
-<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 <link rel="stylesheet" href="../assets/css/normalize.css">
 <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
 <link rel="stylesheet" href="../assets/css/fontello.css">
@@ -120,7 +115,33 @@
           <h3 class="info-text">ABS CBN Relief Campaign</h3>
         </div>
         <div class="modal-body">
-
+            <div class="col-md-12">
+                <div class="col-md-6">
+                  <img>
+                  <h5>HOW TO GET THERE</h5>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <h5>WHEN</h5>
+                  </div>
+                  <div class="row">
+                    <span>September 20, 2017</span>
+                  </div>
+                  <div class="row">
+                    <h5>WHAT WE NEED</h5>
+                  </div>
+                  <div class="row">
+                    <span>Doctors, Dentists, Nurses</span>
+                  </div>
+                  <div class="row">
+                    <h5>WHAT TO BRING</h5>
+                  </div>
+                  <div class="row">
+                    <span>Medicines, Medical Supplies</span>
+                  </div>
+              </div>
+            </div>
+            </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <?php include ('Header.php');?>
     <body>
         <div class="slider-area">
@@ -18,5 +19,5 @@
         </div>
     </body>
 </html>
-<script src="../assets/js/jquery-1.10.2.min.js"></script>
-<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="CAPSTONE-v2/assets/js/jquery-1.10.2.min.js"></script>
+<script src="CAPSTONE-v2/bootstrap/js/bootstrap.min.js"></script>
