@@ -1088,11 +1088,10 @@ font-weight: 500;
 page-header
 ======================================================*/
 .page-head{
-    background: #494C53 url("../../assets/img/1.jpg")
-        no-repeat scroll center top / cover;
+    background: #fc2f4e;
     color:#FFF;
     position: relative;
-    min-height: 250px;
+    min-height: 450px;
 }
 .page-head-content {
     padding-top: 10px;

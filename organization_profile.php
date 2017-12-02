@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js"> <!--<![endif]-->
+<html class="no-js" dir="ltr"> <!--<![endif]-->
     <head>
          <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,6 +34,9 @@
         <link rel="stylesheet" href="assets/css/owl.transitions.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!--STAR RATING--> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  		<link rel="stylesheet" href="star-rating.css">
     </head>
     <body>
 
@@ -133,7 +136,7 @@
 
                     <div class="" id="contact1">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-md-5">
                                 <h2> <strong>UPCOMING ACTIVITIES</strong> </h2>
                                 <img src="red.png" alt="Red Cross" width="170" height="170">
                                 <h6><strong>--NAME OF ACTIVITY--</strong></h6>
@@ -149,6 +152,7 @@
                                           <h4 class="modal-title" img src="givefeedback.png" alt="bulb"><strong>ACTIVITY</strong></h4>
                                         </div>
                                         <div class="modal-body">
+
                                           <h6>MEDICAL MISSION:</h6>
                                           <h6><strong>WHEN:</strong></h6>
                                           <h6><strong>WHAT WE NEED:</strong></h6>
@@ -164,7 +168,7 @@
                                 </div>
                             </div>
                             <!-- /.col-sm-4 -->
-                            <div class="col-sm-5">
+                            <div class="col-md-5">
                                 <h2><strong>RECENT ACTIVITIES</strong> </h2>
                                 <img src="feeding.png" alt="feeding" width="170" height="170">
                                 <p><strong>Sample Event</strong></p>
@@ -180,8 +184,33 @@
                                           <h4 class="modal-title"><strong>Give Feedback!</strong></h4>
                                       </div>
                                       <div class="modal-body">
-                                        <textarea row="4" cols="50" name="comment" placeholder="Enter your comment..."></textarea>
+                                        <textarea row="10" cols="50" name="comment" placeholder="Enter your comment..."></textarea>
                                       </div>
+
+                                          <!--STAR RATING -->
+
+                                          <div class="star-rating">
+			                                         <input id="star-5" type="radio" name="rating" value="star-5">
+			                                            <label for="star-5" title="5 stars">
+					                                               <i class="active fa fa-star" aria-hidden="true">5</i>
+			                                            </label>
+			                                         <input id="star-4" type="radio" name="rating" value="star-4">
+			                                            <label for="star-4" title="4 stars">
+					                                                <i class="active fa fa-star" aria-hidden="true">4</i>
+			                                           </label>
+			                                         <input id="star-3" type="radio" name="rating" value="star-3">
+			                                            <label for="star-3" title="3 stars">
+					                                                <i class="active fa fa-star" aria-hidden="true">3</i>
+			                                            </label>
+			                                          <input id="star-2" type="radio" name="rating" value="star-2">
+			                                             <label for="star-2" title="2 stars">
+					                                                <i class="active fa fa-star" aria-hidden="true">2</i>
+			                                             </label>
+			                                           <input id="star-1" type="radio" name="rating" value="star-1">
+			                                              <label for="star-1" title="1 star">
+					                                                  <i class="active fa fa-star" aria-hidden="true">1</i>
+			                                             </label>
+		                                        </div>
                                       <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
                                       </div>
@@ -197,7 +226,7 @@
                 </div>
                 <!-- /.col-md-9 -->
 
-                <div class="col-md-3 ">
+                <!-- <div class="col-md-2 ">
                     <div class="blog-asside-center">
                         <div class="panel panel-default sidebar-menu wow fadeInRight animated">
                             <div class="panel-heading">
@@ -215,7 +244,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
          <!-- Footer area-->
 
