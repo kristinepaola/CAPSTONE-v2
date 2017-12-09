@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
     <body>
         <!-- Body content -->
         <?php include("Header.php") ?>

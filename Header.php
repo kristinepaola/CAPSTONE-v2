@@ -7,7 +7,7 @@
   <title> AMBOT | Home page</title>
   <meta name="description" content="Web Portal for local volunteers">
   <meta name="author" content="">
-  <meta name="keyword" content="html5, css, bootstrap, property, real-estate theme , bootstrap template">
+  <meta name="keyword" content="html5, css, bootstrap,">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
@@ -31,14 +31,12 @@
   <link rel="stylesheet" href="assets/css/owl.transitions.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
-
 </head>
 <body>
 
 
 <nav class="navbar navbar-default ">
   <div class="container">
-
     <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -53,7 +51,7 @@
     <div class="collapse navbar-collapse yamm" id="navigation">
         <div class="button navbar-right">
             <a href="login.php"><button class="navbar-btn nav-button wow bounceInRight login" id="login">Login</button></a>
-            <a href="register_organization.php"><button class="navbar-btn nav-button wow fadeInRight" id="register" >Register</button></a>
+            <a href="register.php"><button class="navbar-btn nav-button wow fadeInRight" id="register" >Register</button></a>
         </div>
         <ul class="main-nav nav navbar-nav navbar-right">
         	<li class="wow fadeInDown"><a class="" href="index.php">Home</a></li>
