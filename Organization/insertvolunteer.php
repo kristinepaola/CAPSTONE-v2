@@ -1,5 +1,5 @@
 <?php
-require ("/sql_connect.php");
+require ("../sql_connect.php");
 $query = "INSERT INTO volunteer_registration VALUES ('',
 									   '".$_POST['firstName']."',
 									   '".$_POST['lastName']."',
