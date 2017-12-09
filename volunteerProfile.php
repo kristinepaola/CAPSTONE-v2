@@ -63,12 +63,13 @@
                 </div>
               </div>
             </p>
-          <h2> Mary Eunice </h2> <h2> <h2> Valenzuela</h2>
-          <h3>Address: Lapu-lapu City </h3>
-          <h3>Schedule: Weekends, 3-4 PM </h3>
-          <h3>Occupation: Nurse </h3>
+          <span>Name:</span><br>
+          <span>Address: </span><br>
+          <span>Schedule: </span><br>
+          <span>Occupation: </span><br>
         <a href="editProfile.php">Edit</a>
         </div>
+
         <div class="col-md-3 ">
         <div class="blog-asside-center">
             <div class="panel panel-default sidebar-menu wow fadeInRight animated">
