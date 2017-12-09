@@ -7,7 +7,7 @@
       <head>
            <meta charset="utf-8">
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <title>GARO ESTATE | Home page</title>
+          <title>Your Profile</title>
           <meta name="description" content="company is a real-estate template">
           <meta name="author" content="Kimarotec">
           <meta name="keyword" content="html5, css, bootstrap, property, real-estate theme , bootstrap template">
@@ -56,19 +56,17 @@
                 <div class="picture-container">
                     <div class="picture">
                       <b>  <img src="1.2.jpg" width="170" height="170">
-                        <div class="col-md-3" >
+                        <div class="col-md-1" >
                         </b>
                     </div>
                   </div>
                 </div>
               </div>
             </p>
-          </p>
-          <b>
-          <h2> Mary Eunice Valenzuela</h2>
-          <h3>Location: Lapu-lapu City </h3>
+          <h2> Mary Eunice </h2> <h2> <h2> Valenzuela</h2>
+          <h3>Address: Lapu-lapu City </h3>
           <h3>Schedule: Weekends, 3-4 PM </h3>
-        </b>
+          <h3>Occupation: Nurse </h3>
         <a href="editProfile.php">Edit</a>
         </div>
         <div class="col-md-3 ">
@@ -93,9 +91,12 @@
                             </div>
                         </li>
                       </div>
+                      <a href="../editAdvocacy.php">Edit</a>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
       <div class="row">
     </div>
           <div class="content-area recent-property padding-top-40" style="background-color: #FFF;">

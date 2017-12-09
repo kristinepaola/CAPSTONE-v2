@@ -1,3 +1,16 @@
+<?php
+require ("sql_connect.php");
+$vol_id = $_GET['volunteerID'];
+$query = "SELECT * FROM volunteer_profile WHERE vol_id = ($vol_id)";
+
+$result = mysqli_query ($sql, $query);
+if (!$result){
+	echo "Error in query";
+	exit();
+}
+$row = mysqli_fetch_array ($result);
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -44,7 +57,7 @@
         <!-- Body content -->
         <?php
         include ('nameTitle.php');
-        ?>s
+        ?>
         <!-- End of nav bar -->
 
         <div class="page-head">
@@ -79,25 +92,30 @@
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label>First Name </label>
-                                                    <input name="firstName" type="text" class="form-control">
+                                                    <input type = "text" name = "firstName" value ="<?php echo $row[0]?>"
                                                 </div>
 
                                                 <div class="form-group">
                                                     <label>Last Name </label>
-                                                    <input name="lastName" type="text" class="form-control">
+                                                    <input type = "text" name = "lastName" value ="<?php echo $row[1]?>"
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Address </label>
-                                                    <input name="address" type="text" class="form-control">
+                                                    <input type = "text" name = "address" value ="<?php echo $row[2]?>"
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Schedule </label>
-                                                    <input name="lastName" type="text" class="form-control">
+                                                    <input type = "text" name = "schedule" value ="<?php echo $row[3]?>"
                                                 </div>
+                                                <div class="form-group">
+                                                    <label>Occupation </label>
+                                                    <input type = "text" name = "occupation" value ="<?php echo $row[4]?>"
+                                                </div>
+                                                <a href="updateProfile.php">Save</a>
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="volunteerProfile.php">Save</a>
+
                                     <!--  End step 1 -->
 
 
