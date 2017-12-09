@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 02, 2017 at 09:38 AM
+-- Generation Time: Dec 09, 2017 at 08:06 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.23
 
@@ -23,25 +23,37 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `occupation_event`
+--
+
+CREATE TABLE `occupation_event` (
+  `occupation_id` int(5) NOT NULL,
+  `event_id` int(5) NOT NULL,
+  `organization_id` int(5) NOT NULL,
+  `occupationName` text NOT NULL,
+  `noVolunteers` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `organization_event`
 --
 
 CREATE TABLE `organization_event` (
   `event_id` int(5) NOT NULL,
   `organization_id` int(5) NOT NULL,
-  `event_name` text NOT NULL,
-  `event_description` text NOT NULL,
-  `event_location` text NOT NULL,
-  `event_start` datetime NOT NULL,
-  `event_end` datetime NOT NULL,
-  `event_image` longblob NOT NULL,
-  `event_materials_req` text NOT NULL,
-  `event_age_req` int(5) NOT NULL,
-  `event_gender_req` text NOT NULL,
-  `event_occupt_req` text NOT NULL,
-  `event_no_volunteer` int(5) NOT NULL,
-  `event_training_attendance` text NOT NULL,
-  `event_partner_org` text NOT NULL
+  `eventTitle` text NOT NULL,
+  `eventDesc` text NOT NULL,
+  `eventLocation` text NOT NULL,
+  `eventStart` datetime NOT NULL,
+  `eventEnd` datetime NOT NULL,
+  `eventMatReq` text NOT NULL,
+  `eventAgeReq` int(5) NOT NULL,
+  `eventGenderReq` text NOT NULL,
+  `eventTrainingAttend` text NOT NULL,
+  `eventPartnerOrg` text NOT NULL,
+  `eventImage` longblob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -92,11 +104,21 @@ CREATE TABLE `volunteer_registration` (
 
 INSERT INTO `volunteer_registration` (`volunteer_id`, `firstName`, `lastName`, `emailAdd`, `password`, `confirmPass`) VALUES
 (2, 'daphne', 'comendador', 'daphnecomendador@gmail.com', 'daphne', 'daphne'),
-(3, 'Ofelia', 'Gabisay', 'gabisayofelia@gmail.com', '1234', '1234');
+(3, 'Ofelia', 'Gabisay', 'gabisayofelia@gmail.com', '1234', '1234'),
+(4, 'Andrew', 'Flores', 'andrewflores@gmail.com', 'unggoy', 'unggoy'),
+(5, 'Andrew', 'Flores', 'andrewflores@gmail.com', 'unggoy', 'unggoy');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `occupation_event`
+--
+ALTER TABLE `occupation_event`
+  ADD PRIMARY KEY (`occupation_id`),
+  ADD UNIQUE KEY `event_id` (`event_id`),
+  ADD UNIQUE KEY `organization_id` (`organization_id`);
 
 --
 -- Indexes for table `organization_event`
@@ -130,6 +152,11 @@ ALTER TABLE `volunteer_registration`
 --
 
 --
+-- AUTO_INCREMENT for table `occupation_event`
+--
+ALTER TABLE `occupation_event`
+  MODIFY `occupation_id` int(5) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `organization_event`
 --
 ALTER TABLE `organization_event`
@@ -148,7 +175,7 @@ ALTER TABLE `rating`
 -- AUTO_INCREMENT for table `volunteer_registration`
 --
 ALTER TABLE `volunteer_registration`
-  MODIFY `volunteer_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `volunteer_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
