@@ -118,6 +118,7 @@
   </div>
   <div class="col-sm-3 padding-top-25">
     <input name="eventOccuptReq" type="text" class="form-control" style="width:250px;" id="occupation">
+
   </div>
   <div class="col-sm-1 padding-top-25">
     <input name="eventnVolunteer" type="number" class="form-control" style="width:50px;" id="nVolunteersOccupation">
@@ -139,7 +140,7 @@
 
 <div class="col-sm-5 col-sm-offset-1" align="right">
 <br>s
-<input type='submit' class='btn btn-finish btn-primary' name='addevent' value='Add Event' />
+<input type='submit' class='btn btn-finish btn-primary' name='submit' value='submit' />
 </div>
 <br>
 </form>
