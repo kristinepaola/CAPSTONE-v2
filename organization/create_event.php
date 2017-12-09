@@ -115,11 +115,11 @@
     <input name="nVolunteersOccupation" type="number" class="form-control" style="width:50px;" id="nVolunteersOccupation">
   </div>
   <div class="col-sm-1 padding-top-25">
-    <button class="btn btn-success"><span class="glyphicon glyphicon-plus" id="addfield"></span></button>
+    <button class="btn btn-success" id="addfield"><span class="glyphicon glyphicon-plus"></span></button>
   </div>
-  <div class="col-sm-3 padding-top-25"></div>
-  <div class="col-sm-1 padding-top-25"></div>
-  <div class="col-sm-1 padding-top-25"></div>
+  <div class="col-sm-3 padding-top-25" id="occupationadd"></div>
+  <div class="col-sm-1 padding-top-25" id="nVolunteersOccupationadd"></div>
+  <div class="col-sm-1 padding-top-25" id="addfieldadd"></div>
 </div>
       </div>
     </div>
@@ -131,7 +131,7 @@
 
 <div class="col-sm-5 col-sm-offset-1" align="right">
 <br>
-<input type='submit' class='btn btn-finish btn-primary' name='signup' value='SIGN UP' />
+
 </div>
 <br>
 </form>
@@ -162,8 +162,16 @@
 
 <script>
 $(document).ready(function(){
+  var occupation = '<input name="occupation" type="text" class="form-control" style="width:250px;" id="occupation">';
+  var nooccupation = '<input name="nVolunteersOccupation" type="number" class="form-control" style="width:50px;" id="nVolunteersOccupation">';
+  var addbutton = '<button class="btn btn-success"><span class="glyphicon glyphicon-plus" id="addfield"></span></button>';
+
   $("#addfield").on("click", function(){
-    $("#eventsreadmore").modal();
+    alert("ADD FIELD CLICKED!");
+    $("#occupationadd").append(occupation);
+    $("#nVolunteersOccupationadd").append(nooccupation);
+    $("#addfieldadd").append(addbutton);
+
   });
 });
 </script>
