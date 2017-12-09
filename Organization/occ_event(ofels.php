@@ -1,11 +1,9 @@
 <?php
-require ("../sql_connect.php");
+
 ?>
 <html>
 <body>
-  <form action="insert_occ_event.php" method="POST" enctype="multipart/form-data">
-    <label>Image <small>(required)</small></label>
-    <input name="eventImage" type="file" id="eventTitle" ><br>
+  <form action="insert_occ_event.php" method="POST">
     <label>Event Title <small>(required)</small></label>
     <input name="eventTitle" type="text" id="eventTitle" ><br>
     <label>Event Description <small>(required)</small></label>
@@ -35,8 +33,8 @@ require ("../sql_connect.php");
     </select>
     <br>
     <div id="container">
-      Occupation Name:<input name="occupationName[]" type="text" id="occupation">
-      No. of Volunteers:<input name="noVolunteers[]" type="number" id="noVolunteers">
+      Occupation Name:<input name="occupationName" type="text" id="occupation">
+      No. of Volunteers:<input name="noVolunteers" type="number" id="noVolunteers">
       <a href="#" id="add">Add</a>
     </div>
     <br>
@@ -45,7 +43,6 @@ require ("../sql_connect.php");
          <a href="#" id="addPartnership">Add</a>
   </div>
     <input type="submit" name="submit"/>
-  </form>
 </body>
 </html>
 <script src="../assets/js/jquery-1.10.2.min.js"></script>
@@ -53,7 +50,7 @@ require ("../sql_connect.php");
 //ADD  OCCUPATION
 $(document).ready(function(){
   //Variables
-   var display = '<p/><div id="container">Occupation Name:<input name="occupationName[]" type="text" id="occupation">No. of Volunteers:<input name="noVolunteers[]" type="number" id="noVolunteers"><a href="#" id="delete">Delete</a></div>';
+   var display = '<p/><div id="container">Occupation Name:<input name="occupationName" type="text" id="occupation">No. of Volunteers:<input name="noVolunteers" type="number" id="noVolunteers"><a href="#" id="delete">Delete</a></div>';
   //Add rows to the form
   $("#add").click(function(){
     $("#container").append(display);
