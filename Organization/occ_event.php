@@ -1,5 +1,11 @@
 <?php
 require ("../sql_connect.php");
+$distrainings_query ="SELECT * FROM list_trainings";
+$distrainings_data = mysqli_query ($sql, $distrainings_query);
+    if (!$distrainings_data)
+    {
+      echo "error in query";
+    }
 ?>
 <html>
 <body>
@@ -33,6 +39,19 @@ require ("../sql_connect.php");
       <option value="Male">Male</option>
       <option value="Both(Female/Male)">Both(Female/Male)</option>
     </select>
+    <br>
+    <div id="trainingAttended">
+        <label>Training / Seminar Attended<small>(required)</small></label>
+        <select id="trainingName" name="trainingName[]">
+          <?php
+          while  ($row =mysqli_fetch_array($distrainings_data))
+          {
+            echo "<option>".$row['trainingName']."</option>";
+          }
+           ?>
+      </select>
+    <a href="#" id="addtrainings">Add</a>
+  </div>
     <br>
     <div id="container">
       Occupation Name:<input name="occupationName[]" type="text" id="occupation">
@@ -73,6 +92,19 @@ $(document).ready(function(){
   });
   //Remove
   $("#partnership").on("click", "#delete", function(){
+    $(this).parent("div").remove();
+  });
+});
+//DROPDOWN TRAINING / SEMINAR
+$(document).ready(function(){
+  //Variables
+   var list_trainings = '<p/><div id="trainingAttended"><label>Training/Seminar Attended<small>(required)</small></label><select id="trainingName" name="trainingName[]"><?php while ($row =mysqli_fetch_array($distrainings_data)) { echo "<option>".$row['trainingName']."</option>"; }?></select><a href="#" id="minus">minus</a></div>';
+  //Add rows to the form
+  $("#addtrainings").click(function(){
+    $("#trainingAttended").append(list_trainings);
+  });
+  //Remove
+  $("#trainingAttended").on("click", "#minus", function(){
     $(this).parent("div").remove();
   });
 });

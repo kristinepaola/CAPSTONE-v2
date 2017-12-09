@@ -39,7 +39,7 @@
     </div>
     <br>
     <div id="partnership">
-       Partnership with Other Organization/s:<input name="eventPartnership" type="text" id="eventPartnerOrg">
+       Partnership with Other Organization/s:<input name="eventPartnership[]" type="text" id="eventPartnerOrg">
          <a href="#" id="addPartnership">Add</a>
   </div>
     <input type="submit" name="submit"/>
@@ -63,7 +63,7 @@ $(document).ready(function(){
 // ADD PARTNERSHIP
 $(document).ready(function(){
   //Variables
-   var output = '<p/><div id="partnership">Partnership with Other Organization/s:<input name="eventPartnerOrg" type="text" id="eventPartnership"><a href="#" id="delete">Delete</a></div>';
+   var output = '<p/><div id="partnership">Partnership with Other Organization/s:<input name="eventPartnerOrg[]" type="text" id="eventPartnership"><a href="#" id="delete">Delete</a></div>';
   //Add rows to the form
   $("#addPartnership").click(function(){
     $("#partnership").append(output);
