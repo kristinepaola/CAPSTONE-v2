@@ -1,9 +1,9 @@
 <?php
-
+require ("../sql_connect.php");
 ?>
 <html>
 <body>
-  <form method="POST">
+  <form method="POST" action="insert_occ_event.php">
     <label>Event Title <small>(required)</small></label>
     <input name="eventTitle" type="text" id="eventTitle" ><br>
     <label>Event Description <small>(required)</small></label>
@@ -27,18 +27,19 @@
     <label>Gender Requirement<small>(required)</small></label>
     <input name="eventGenderReq" type="text" id="eventGenderReq"><br>
     <div id="container">
-      Occupation Name:<input name="occupationName" type="text" id="occupation">
-      No. of Volunteers:<input name="noVolunteers" type="number" id="noVolunteers">
+      Occupation Name:<input name="occupationName[]" type="text" id="occupation">
+      No. of Volunteers:<input name="noVolunteers[]" type="number" id="noVolunteers">
       <a href="#" id="add">Add</a>
     </div>
     <input type="submit" name="submit"/>
+  </form>
 </body>
 </html>
 <script src="../assets/js/jquery-1.10.2.min.js"></script>
 <script>
 $(document).ready(function(e){
   //Variables
-   var display = '<p/><div id="container">Occupation Name:<input name="occupationName" type="text" id="occupation">No. of Volunteers:<input name="noVolunteers" type="number" id="noVolunteers"><a href="#" id="delete">Delete</a></div>';
+   var display = '<p/><div id="container">Occupation Name:<input name="occupationName[]" type="text" id="occupation">No. of Volunteers:<input name="noVolunteers[]" type="number" id="noVolunteers"><a href="#" id="delete">Delete</a></div>';
   //Add rows to the form
   $("#add").click(function(){
     $("#container").append(display);
