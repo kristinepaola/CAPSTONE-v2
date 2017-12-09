@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+ <html class="no-js">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +8,17 @@
         <meta name="author" content="Kimarotec">
         <meta name="keyword" content="html5, css, bootstrap, property, real-estate theme , bootstrap template">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> AMBOT | Home page</title>
+  <meta name="description" content="Web Portal for local volunteers">
+  <meta name="author" content="">
+  <meta name="keyword" content="html5, css, bootstrap,">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
 
@@ -24,11 +32,11 @@
         <link href="assets/fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
         <link href="assets/fonts/icon-7-stroke/css/helper.css" rel="stylesheet">
         <link href="assets/css/animate.css" rel="stylesheet" media="screen">
-        <link rel="stylesheet" href="assets/css/bootstrap-select.min.css"> 
+        <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/icheck.min_all.css">
         <link rel="stylesheet" href="assets/css/price-range.css">
-        <link rel="stylesheet" href="assets/css/owl.carousel.css">  
+        <link rel="stylesheet" href="assets/css/owl.carousel.css">
         <link rel="stylesheet" href="assets/css/owl.theme.css">
         <link rel="stylesheet" href="assets/css/owl.transitions.css">
         <link rel="stylesheet" href="assets/css/style.css">
@@ -36,8 +44,49 @@
     </head>
     <body>
 
+<<<<<<< HEAD
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/fontello.css">
+  <link href="assets/fonts/icon-7-stroke/css/pe-icon-7-stroke.css" rel="stylesheet">
+  <link href="assets/fonts/icon-7-stroke/css/helper.css" rel="stylesheet">
+  <link href="assets/css/animate.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/icheck.min_all.css">
+  <link rel="stylesheet" href="assets/css/price-range.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.css">
+  <link rel="stylesheet" href="assets/css/owl.transitions.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+
+<nav class="navbar navbar-default ">
+  <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="" alt=""></a>
+    </div>
+
+
+    <div class="collapse navbar-collapse yamm" id="navigation">
+        <div class="button navbar-right">
+            <a href="login.php"><button class="navbar-btn nav-button wow bounceInRight login" id="login">Login</button></a>
+            <a href="register.php"><button class="navbar-btn nav-button wow fadeInRight" id="register" >Register</button></a>
         <div id="preloader">
             <div id="status">&nbsp;</div>
+
         </div>
         <!-- Body content -->
 
@@ -67,7 +116,7 @@
                     </div>
                 </div>
             </div>
-        </div>        
+        </div>
         End top header -->
 
         <nav class="navbar navbar-default ">
@@ -132,7 +181,7 @@
                                                     <li><a href="contact.html">Contact style (1)</a> </li>
                                                     <li><a href="contact-3.html">Contact style (2)</a> </li>
                                                     <li><a href="contact_3.html">Contact style (3)</a> </li>
-                                                    <li><a href="faq.html">FAQ page</a> </li> 
+                                                    <li><a href="faq.html">FAQ page</a> </li>
                                                     <li><a href="404.html">404 page</a>  </li>
                                                 </ul>
                                             </div>
@@ -146,17 +195,17 @@
 
                                                 <h5>Properties list</h5>
                                                 <ul>
-                                                    <li><a href="properties.html">Properties list style (1)</a> </li> 
-                                                    <li><a href="properties-2.html">Properties list style (2)</a> </li> 
-                                                    <li><a href="properties-3.html">Properties list style (3)</a> </li> 
-                                                </ul>                                               
+                                                    <li><a href="properties.html">Properties list style (1)</a> </li>
+                                                    <li><a href="properties-2.html">Properties list style (2)</a> </li>
+                                                    <li><a href="properties-3.html">Properties list style (3)</a> </li>
+                                                </ul>
                                             </div>
                                             <div class="col-sm-3">
                                                 <h5>Property process</h5>
-                                                <ul> 
+                                                <ul>
                                                     <li><a href="submit-property.html">Submit - step 1</a> </li>
                                                     <li><a href="submit-property.html">Submit - step 2</a> </li>
-                                                    <li><a href="submit-property.html">Submit - step 3</a> </li> 
+                                                    <li><a href="submit-property.html">Submit - step 3</a> </li>
                                                 </ul>
                                                 <h5>User account</h5>
                                                 <ul>
