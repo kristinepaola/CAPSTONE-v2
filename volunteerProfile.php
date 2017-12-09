@@ -1,9 +1,14 @@
+<?php
+  require ("sql_connect.php");
+  $query = "SELECT * FROM volunteer_registration WHERE volunteer_id = '3'";
+  $data = mysqli_query($sql, $query);
+  if (!$data){
+    echo "error";
+  }
+  $row = mysqli_fetch_array($data);
+?>
   <!DOCTYPE html>
-  <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-  <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-  <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-  <!--[if gt IE 8]><!-->
-  <html class="no-js"> <!--<![endif]-->
+  <html class="no-js">
       <head>
            <meta charset="utf-8">
           <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -37,9 +42,7 @@
       </head>
       <body>
 
-          <div id="preloader">
-              <div id="status">&nbsp;</div>
-          </div>
+
           <!-- Body content -->
 
 
@@ -63,11 +66,11 @@
                 </div>
               </div>
             </p>
-          <span>Name:</span><br>
+          <span>Name: <?php echo $row['firstName']." ".$row['lastName']; ?></span><br>
           <span>Address: </span><br>
           <span>Schedule: </span><br>
           <span>Occupation: </span><br>
-        <a href="editProfile.php">Edit</a>
+        <a href="editProfile.php?volId=<?php echo $row['volunteer_id'] ?>">Edit</a>
         </div>
 
         <div class="col-md-3 ">

@@ -1,11 +1,11 @@
 <?php
 require ("sql_connect.php");
-$vol_id = $_GET['volunteerID'];
-$query = "SELECT * FROM volunteer_profile WHERE vol_id = ($vol_id)";
+$vol_id = $_GET['volId'];
+$query = "SELECT * FROM volunteer_profile WHERE vol_id = '".$vol_id ."'";
 
 $result = mysqli_query ($sql, $query);
 if (!$result){
-	echo "Error in query";
+	echo "Error ";
 	exit();
 }
 $row = mysqli_fetch_array ($result);
@@ -50,10 +50,6 @@ $row = mysqli_fetch_array ($result);
         <link rel="stylesheet" href="assets/css/responsive.css">
     </head>
     <body>
-
-        <div id="preloader">
-            <div id="status">&nbsp;</div>
-        </div>
         <!-- Body content -->
         <?php
         include ('nameTitle.php');
@@ -92,24 +88,24 @@ $row = mysqli_fetch_array ($result);
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label>First Name </label>
-                                                    <input type = "text" name = "firstName" value ="<?php echo $row[0]?>"
+                                                    <input type = "text" name = "firstName" value ="<?php echo $row['firstName']?>"
                                                 </div>
 
                                                 <div class="form-group">
                                                     <label>Last Name </label>
-                                                    <input type = "text" name = "lastName" value ="<?php echo $row[1]?>"
+                                                    <input type = "text" name = "lastName" value ="<?php echo $row['lastName']?>"
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Address </label>
-                                                    <input type = "text" name = "address" value ="<?php echo $row[2]?>"
+                                                    <input type = "text" name = "address" value ="<?php echo $row['address']?>"
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Schedule </label>
-                                                    <input type = "text" name = "schedule" value ="<?php echo $row[3]?>"
+                                                    <input type = "text" name = "schedule" value ="<?php echo $row['schedule']?>"
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Occupation </label>
-                                                    <input type = "text" name = "occupation" value ="<?php echo $row[4]?>"
+                                                    <input type = "text" name = "occupation" value ="<?php echo $row['occupation']?>"
                                                 </div>
                                                 <a href="updateProfile.php">Save</a>
                                             </div>
