@@ -70,7 +70,7 @@
           <span>Address: </span><br>
           <span>Schedule: </span><br>
           <span>Occupation: </span><br>
-        <a href="editProfile.php?volId=<?php echo $row['volunteer_id'] ?>">Edit</a>
+        <a href="dashboard.php?volId=<?php echo $row['volunteer_id'] ?>">Edit</a>
         </div>
 
         <div class="col-md-3 ">
