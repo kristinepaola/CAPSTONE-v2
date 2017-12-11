@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 
+<<<<<<< HEAD
 <?php
 include ('Header.php');
 ?>
+=======
+<?php include ('Header.php');?>
+
+>>>>>>> parent of f2372ba... Merge branch 'duff-' of https://github.com/kristinepaola/CAPSTONE-v2 into duff-
     <body>
         <div class="slider-area">
             <div class="slider">
@@ -15,6 +20,11 @@ include ('Header.php');
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-18">
                         <h2>CHANGE STARTS HERE</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deserunt deleniti, ullam commodi sit ipsam laboriosam velit adipisci quibusdam aliquam teneturo!</p>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> parent of f2372ba... Merge branch 'duff-' of https://github.com/kristinepaola/CAPSTONE-v2 into duff-
                         <div class="search-form wow pulse" data-wow-delay="0.1s">
 
                             <form action="" class=" form-inline">
@@ -25,7 +35,11 @@ include ('Header.php');
                                 </div>
                                 <div class="form-group">
                                     <select id="lunchBegins" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Select your city">
+<<<<<<< HEAD
 
+=======
+z
+>>>>>>> parent of f2372ba... Merge branch 'duff-' of https://github.com/kristinepaola/CAPSTONE-v2 into duff-
                                         <option>New york, CA</option>
                                         <option>Paris</option>
                                         <option>Casablanca</option>
@@ -190,11 +204,16 @@ include ('Header.php');
 
                             </form>
                         </div>
+<<<<<<< HEAD
+=======
+>>>>>>> e5ef6480a2230f6b3a79233c80399fdb0f8eea78
+>>>>>>> parent of f2372ba... Merge branch 'duff-' of https://github.com/kristinepaola/CAPSTONE-v2 into duff-
                     </div>
                 </div>
             </div>
         </div>
 
+<<<<<<< HEAD
         <!-- property area -->
 
 
@@ -260,4 +279,8 @@ include ('Header.php');
 <?php
 include ('footer.php');
 ?>
+=======
+    </body>
+    <?php include ('Footer.php');?>
+>>>>>>> parent of f2372ba... Merge branch 'duff-' of https://github.com/kristinepaola/CAPSTONE-v2 into duff-
 </html>

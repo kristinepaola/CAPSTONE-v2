@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> duff-
+=======
+>>>>>>> parent of f2372ba... Merge branch 'duff-' of https://github.com/kristinepaola/CAPSTONE-v2 into duff-
 <html class="no-js">
 <head>
   <meta charset="utf-8">
@@ -17,6 +20,7 @@
 =======
   <meta name="keyword" content="html5, css, bootstrap,">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 =======
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
 >>>>>>> c04c4842d6ab5da88a86f9306de680ef5411bfc5
@@ -29,6 +33,12 @@
 =======
 <<<<<<< HEAD
 >>>>>>> duff-
+=======
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+
+
+>>>>>>> parent of f2372ba... Merge branch 'duff-' of https://github.com/kristinepaola/CAPSTONE-v2 into duff-
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -74,11 +84,8 @@
         <div class="button navbar-right">
             <a href="login.php"><button class="navbar-btn nav-button wow bounceInRight login" id="login">Login</button></a>
             <a href="register.php"><button class="navbar-btn nav-button wow fadeInRight" id="register" >Register</button></a>
-=======
-        <div id="preloader">
-            <div id="status">&nbsp;</div>
->>>>>>> c04c4842d6ab5da88a86f9306de680ef5411bfc5
         </div>
+<<<<<<< HEAD
         <!-- Body content -->
 >>>>>>> duff-
 
@@ -101,6 +108,8 @@
             <a href="/capstone/CAPSTONE-v2/login.php"><button class="navbar-btn nav-button wow bounceInRight login" id="login">Login</button></a>
             <button class="navbar-btn nav-button wow fadeInRight" id="register" >Register</button>
         </div>
+=======
+>>>>>>> parent of f2372ba... Merge branch 'duff-' of https://github.com/kristinepaola/CAPSTONE-v2 into duff-
         <ul class="main-nav nav navbar-nav navbar-right">
         	<li class="wow fadeInDown"><a class="" href="index.php">Home</a></li>
         	<li class="wow fadeInDown"><a class="" href="">About Us</a></li>
@@ -110,6 +119,7 @@
     </div>
   </div>
 </nav>
+<<<<<<< HEAD
 <!-- MODAL FOR REGISTRATION -->
 <div id="regmodal" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -133,14 +143,32 @@
   </div>
 </div>
 
+=======
+>>>>>>> parent of f2372ba... Merge branch 'duff-' of https://github.com/kristinepaola/CAPSTONE-v2 into duff-
 </body>
 </html>
 <script src="assets/js/jquery-1.10.2.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
+<<<<<<< HEAD
 <script>
   $(document).ready(function(){
     $("#register").on("click", function(){
       $("#regmodal").modal();
     });
   });
+=======
+
+<script>
+
+	$(document).ready(function(){
+		$("#register").on("click", function(){
+			$("#signUp").modal();
+		});
+
+		$("#login").on("click", function(){
+			$("#logIn").modal();
+		});
+	});
+
+>>>>>>> parent of f2372ba... Merge branch 'duff-' of https://github.com/kristinepaola/CAPSTONE-v2 into duff-
 </script>
