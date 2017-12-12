@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?php
 include ('Header.php');
 ?>
+=======
+<?php include ('Header.php');?>
+
+>>>>>>> parent of f2372ba... Merge branch 'duff-' of https://github.com/kristinepaola/CAPSTONE-v2 into duff-
 =======
 <?php include ('Header.php');?>
 
@@ -23,6 +28,9 @@ include ('Header.php');
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of f2372ba... Merge branch 'duff-' of https://github.com/kristinepaola/CAPSTONE-v2 into duff-
 =======
 >>>>>>> parent of f2372ba... Merge branch 'duff-' of https://github.com/kristinepaola/CAPSTONE-v2 into duff-
                         <div class="search-form wow pulse" data-wow-delay="0.1s">
@@ -36,7 +44,11 @@ include ('Header.php');
                                 <div class="form-group">
                                     <select id="lunchBegins" class="selectpicker" data-live-search="true" data-live-search-style="begins" title="Select your city">
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+z
+>>>>>>> parent of f2372ba... Merge branch 'duff-' of https://github.com/kristinepaola/CAPSTONE-v2 into duff-
 =======
 z
 >>>>>>> parent of f2372ba... Merge branch 'duff-' of https://github.com/kristinepaola/CAPSTONE-v2 into duff-
@@ -205,6 +217,10 @@ z
                             </form>
                         </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e5ef6480a2230f6b3a79233c80399fdb0f8eea78
+>>>>>>> parent of f2372ba... Merge branch 'duff-' of https://github.com/kristinepaola/CAPSTONE-v2 into duff-
 =======
 >>>>>>> e5ef6480a2230f6b3a79233c80399fdb0f8eea78
 >>>>>>> parent of f2372ba... Merge branch 'duff-' of https://github.com/kristinepaola/CAPSTONE-v2 into duff-
@@ -213,6 +229,7 @@ z
             </div>
         </div>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         <!-- property area -->
 
@@ -279,6 +296,10 @@ z
 <?php
 include ('footer.php');
 ?>
+=======
+    </body>
+    <?php include ('Footer.php');?>
+>>>>>>> parent of f2372ba... Merge branch 'duff-' of https://github.com/kristinepaola/CAPSTONE-v2 into duff-
 =======
     </body>
     <?php include ('Footer.php');?>
