@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<?php require ("../sql_connect.php"); ?>
+<?php require ("../sql_connect.php");
+      require ("../Header.php")
+?>
 
 <html class="no-js">
 <head>
@@ -37,101 +39,89 @@
 </head>
 <body>
 
-
-<?php include ("../Header.php"); ?>
 <div class="content-area user-profiel" style="background-color: #FCFCFC;">&nbsp;
-<div class="container">
-<div class="row">
-<div class="col-sm-10 col-sm-offset-1 profiel-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 profiel-container">
 
-<form action="insertvolunteer.php" method="POST" enctype="multipart/form-data">
-<div class="profiel-header">
-<h3>
-    <b>CREATE</b> AN EVENT <br>
-
-</h3>
-<hr>
-</div>
-
-<div class="clear">
-<div class="col-sm-12 padding-top-25">
-    <div class="col-sm-5 padding-top-25">
-      <div class="form-group">
+        <form action="insert_event.php" method="POST" enctype="multipart/form-data">
+          <div class="profiel-header">
+          <h3>
+              <b>CREATE</b> AN EVENT <br>
+          </h3>
+          <hr>
+          </div>
+  <div class="clear">
+      <div class="col-sm-3 col-sm-offset-1">
+          <div class="picture-container">
+              <div class="picture">
+                  <img src="assets/img/avatar.png" class="picture-src" id="wizardPicturePreview" title=""/>
+                  <input type="file" id="wizard-picture" name="eventImage">
+              </div>
+              <h6>Choose Picture</h6>
+          </div>
+      </div>
+        <div class="col-sm-6 padding-top-25">
           <label>Event Title <small>(required)</small></label>
-          <input name="eventTitle" type="text" class="form-control" >
-      </div>
-    </div>
-    <div class="col-sm-4 padding-top-25">
-      <div class="form-group">
+          <input name="eventTitle" type="text" id="eventTitle" class="form-control"><br>
+          <label>Event Description <small>(required)</small></label>
+          <textarea rows ="5" cols="65" name="eventDesc" type="text" id="eventDesc" ></textarea><br>
+          <br>
           <label>Location<small>(required)</small></label>
-          <input name="eventTitle" type="text" class="form-control" >
+          <input name="eventLocation" type="text" id="eventLocation" class="form-control"><br>
       </div>
-    </div>
-</div>
-<div class="col-sm-12 padding-top-25">
-    <div class="col-sm-5 padding-top-25">
-      <div class="form-group">
-          <label>Start <small>(required)</small></label>
-          <input name="start" type="datetime-local" class="form-control">
-      </div>
-    </div>
-    <div class="col-sm-5 padding-top-25">
-      <div class="form-group">
-          <label>End<small>(required)</small></label>
-          <input name="end" type="datetime-local" class="form-control">
-      </div>
-    </div>
-</div>
-<div class="col-sm-12 padding-top-25">
-    <div class="col-sm-3 padding-top-25">
-      <div class="form-group">
-          <label>Age Requirement <small>(required)</small></label>
-          <input name="ageReq" type="text" class="form-control" >
-      </div>
-    </div>
-    <div class="col-sm-4 padding-top-25">
-      <div class="form-group">
-          <label>Gender Requirement<small>(required)</small></label>
-          <input name="genderReq" type="text" class="form-control" >
-      </div>
-    </div>
-</div>
-<div class="col-sm-12 padding-top-25">
-    <div class="col-sm-3 padding-top-25">
-      <div class="form-group">
-          <label>No. of Volunteers <small>(required)</small></label>
-          <input name="nVolunteers" type="number" class="form-control" style="width:90px;">
-      </div>
-    </div>
-</div>
-<div class="col-sm-12 padding-top-25" style="padding-left:50px">
-  <div>
-    <label>Occupation <small>(required)</small></label>
   </div>
-  <div class="col-sm-3 padding-top-25">
-    <input name="occupation" type="text" class="form-control" style="width:250px;" id="occupation">
-  </div>
-  <div class="col-sm-1 padding-top-25">
-    <input name="nVolunteersOccupation" type="number" class="form-control" style="width:50px;" id="nVolunteersOccupation">
-  </div>
-  <div class="col-sm-1 padding-top-25">
-    <button class="btn btn-success" id="addfield"><span class="glyphicon glyphicon-plus"></span></button>
-  </div>
-  <div class="col-sm-3 padding-top-25" id="occupationadd"></div>
-  <div class="col-sm-1 padding-top-25" id="nVolunteersOccupationadd"></div>
-  <div class="col-sm-1 padding-top-25" id="addfieldadd"></div>
-</div>
-      </div>
-    </div>
-</div>
 
-
+    <div class="col-sm-6">
+      <label>Start <small>(required)</small></label>
+      <input name="eventStart" type="datetime-local" id="eventStart" class="form-control"><br>
+    </div>
+    <div class="col-sm-6">
+      <label>End<small>(required)</small></label>
+      <input name="eventEnd" type="datetime-local" id="eventEnd" class="form-control"><br>
+    </div>
+    <div class="col-sm-6">
+      <label>Materials Needed</label>
+      <textarea rows ="5" cols="65" name="eventMatReq" type="text" id="eventMatReq" ></textarea><br>
+    </div>
+    <div class="col-sm-6">
+      <label>Age Requirement <small>(required)</small></label>
+      <input name="eventAgeReq" type="number" id="eventAgeReq" class="form-control"><br>
+      <label>Gender Requirement<small> (required)</small></label>
+      <br>
+      <select id="eventGenderReq" name="eventGenderReq" class="form-control">
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+        <option value="Both(Female/Male)">Both(Female/Male)</option>
+      </select>
+      <br>
+    </div>
+    <div class="col-sm-12 padding-top-25">
+      <div id="trainingAttended" class="col-sm-6">
+          <label>Training/Seminar Attended</label>
+          <br>
+          <select id="trainingName" name="trainingName[]" class="form-control">
+            <option>ambot</option>
+          </select>
+          <a href="#" id="addtrainings" class="btn btn-success">+</a>
+      </div>
+    </div>
+    <div class="col-sm-6 padding-top-25" id="container">
+      <label>Occupation Name:</label>
+      <input name="occupationName[]" type="text" id="occupation" class="form-control">
+      <label>No. of Volunteers:</label><input name="noVolunteers[]" type="number" id="noVolunteers" class="form-control">
+      <a href="#" id="add" class="btn btn-success">+</a>
+    </div>
+    <div class="col-sm-6 padding-top-25" id="partnership">
+       Partnership with Other Organization/s:<input name="eventPartnership" type="text" id="eventPartnerOrg" class="form-control">
+         <a href="#" id="addPartnership" class="btn btn-success">+</a>
+    </div>
 </div>
 
 
 <div class="col-sm-5 col-sm-offset-1" align="right">
 <br>
-
+<input type='submit' class='btn btn-finish btn-primary' name='submit' value='submit' />
 </div>
 <br>
 </form>
@@ -142,6 +132,11 @@
 </div>
 </div>
 
+
+
+
+</body>
+</html>
 <script src="../assets/js/vendor/modernizr-2.6.2.min.js"></script>
 <script src="../assets/js//jquery-1.10.2.min.js"></script>
 <script src="../bootstrap/js/bootstrap.min.js"></script>
@@ -159,22 +154,30 @@
 <script src="../assets/js/wizard.js"></script>
 
 <script src="../assets/js/main.js"></script>
-
 <script>
+//ADD  OCCUPATION
 $(document).ready(function(){
-  var occupation = '<input name="occupation" type="text" class="form-control" style="width:250px;" id="occupation">';
-  var nooccupation = '<input name="nVolunteersOccupation" type="number" class="form-control" style="width:50px;" id="nVolunteersOccupation">';
-  var addbutton = '<button class="btn btn-success"><span class="glyphicon glyphicon-plus" id="addfield"></span></button>';
-
-  $("#addfield").on("click", function(){
-    alert("ADD FIELD CLICKED!");
-    $("#occupationadd").append(occupation);
-    $("#nVolunteersOccupationadd").append(nooccupation);
-    $("#addfieldadd").append(addbutton);
-
+  //Variables
+   var display = '<label>Occupation Name:</label><input name="occupationName[]" type="text" id="occupation" class="form-control"><label>No. of Volunteers:</label><input name="noVolunteers[]" type="number" id="noVolunteers" class="form-control"><a href="#" id="add" class="btn btn-danger">-</a>';
+  //Add rows to the form
+  $("#add").click(function(){
+    $("#container").append(display);
   });
+  //Remove
+  $("#container").on("click", "#delete", function(){
+    $(this).parent("div").remove();
+  });i
+// ADD PARTNERSHIP
+  //Variables
+   var output = '<p/><div id="partnership">Partnership with Other Organization/s:<input name="eventPartnerOrg" type="text" id="eventPartnership"><a href="#" id="delete">Delete</a></div>';
+  //Add rows to the form
+  $("#addPartnership").click(function(){
+    $("#partnership").append(output);
+  });
+  //Remove
+  $("#partnership").on("click", "#delete", function(){
+    $(this).parent("div").remove();
+  });
+
 });
 </script>
-
-</body>
-</html>
