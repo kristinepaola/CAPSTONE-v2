@@ -30,7 +30,7 @@ require ("../sql_connect.php");
     <textarea rows ="5" cols="15" name="eventMatReq" type="text" id="eventMatReq" ></textarea><br>
     <br>
     <label>Age Requirement <small>(required)</small></label>
-    <input name="eventAgeReq" type="number" id="eventAgeReq" ><br>
+    <input name="eventAgeReqMin" type="number"> to <input name="eventAgeReqMax" type="number"><br>
     <br>
     <label>Gender Requirement<small>(required)</small></label>
     <br>
@@ -44,7 +44,7 @@ require ("../sql_connect.php");
         <label>Training / Seminar Attended<small>(required)</small></label>
         <select id="trainingName" name="trainingName[]">
           <option>ambot</option>
-      </select>
+        </select>
     <a href="#" id="addtrainings">Add</a>
     </div>
     <br>
@@ -66,6 +66,12 @@ require ("../sql_connect.php");
 <script>
 //ADD  OCCUPATION
 $(document).ready(function(){
+  //Variables
+   var display = '<p/><div id="container">Occupation Name:<input name="occupationName[]" type="text" id="occupation">No. of Volunteers:<input name="noVolunteers[]" type="number" id="noVolunteers"><a href="#" id="delete">Delete</a></div>';
+  //Add rows to the form
+  $("#add").click(function(){
+    $("#container").append(display);
+  });
   //Variables
    var display = '<p/><div id="container">Occupation Name:<input name="occupationName[]" type="text" id="occupation">No. of Volunteers:<input name="noVolunteers[]" type="number" id="noVolunteers"><a href="#" id="delete">Delete</a></div>';
   //Add rows to the form

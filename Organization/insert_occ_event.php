@@ -2,10 +2,21 @@
 require ("../sql_connect.php");
 
 //duff add image
-$file = addslashes(file_get_contents($_FILES["eventImage"]["tmp_name"]));
+
+$name = $_FILES['eventImage']['name'];
+
+$target_dir = "eventImages/";
+$target_file = $target_dir . basename($_FILES['eventImage']['name']);
+
+// select file type
+$imagefileType = strtolower (pathinfo($target_file, PATHINFO_EXTENSION));
+
+//valid file extensions
+$extensions_arr = array("jpg", "jpeg", "png", "gif");
+
 //ofels code
 $addevent_query ="INSERT INTO organization_event VALUES ('',
-                                                '13',
+                                                '',
                                   '".$_POST['eventTitle']."',
                                   '".$_POST['eventDesc']."',
                                   '".$_POST['eventLocation']."',
@@ -35,9 +46,9 @@ $addevent_data = mysqli_query ($sql, $addevent_query);
  $noVolunteers = $_POST["noVolunteers"];
 
  foreach ($occupationName AS $key => $value ){
-   $addocc_query = "INSERT INTO occupation_event VALUES ('23',
-                                         '23',
-                                         '23',
+   $addocc_query = "INSERT INTO occupation_event VALUES ('',
+                                         '',
+                                         '',
                                         '".$sql->real_escape_string($value)."',
                                         '".$sql->real_escape_string($noVolunteers[$key])."')";
 

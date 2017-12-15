@@ -27,7 +27,7 @@ $data = mysqli_query($sql, $query);
 if (!$data){
   echo "ERROR IN QUERY";
 }else{
-  echo "Organization successfully registered";
+  header("organization_dashboard.php");
 }
 
 ?>
