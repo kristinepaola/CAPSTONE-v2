@@ -53,6 +53,18 @@ include('sql_connect.php');
                                     ?>
                                     </tbody>
                                 </table>
+                                <div class='container-fluid' style='text-align:center;'>
+                                      <form id='edFormSingle' action='edit.php' onSubmit='return editCheck();' method='post'>
+                                          <input type='hidden' id='ed0' name='editElement[]' value=''/>
+                                          <input type='hidden' id='ed1' name='editElement[]' value=''/>
+                                          <input class="required" type='hidden' id='ed2' name='editElement[]' value=''/>
+                                          <input type='submit' id='edSub' value='Edit' hidden/>
+                                      </form>
+                                      <!-- <form id='delFormSingle' action='AccountDeleteSingle.php' method='post'>
+                                          <input type='hidden' id='del0' name='deleteElement' value=''/>
+                                          <input type='submit' id='delSub' value='Edit' hidden/>
+                                      </form> -->
+                                  </div>
                             </div>
                             <!-- /.table-responsive -->
                         </div>
@@ -61,3 +73,72 @@ include('sql_connect.php');
 
     </body>
 </html>
+<script>
+//universal
+var chck = 0;
+var td = [4];
+
+
+function addEditDelValue(idnt,id,val){
+	document.getElementById(idnt+id).value = val;
+}
+
+function getEdit(id){
+	var tdEdit = [2];
+	var DELETE_KEY_ALT = '"del"';
+	var EDIT_KEY_ALT = '"ed"';
+
+
+	for(var x=0;x!=2;x++){
+		td[x] = document.getElementById('td'+x+id).innerHTML;
+	}
+
+	for(var y = 0; document.getElementById('edit'+y);y++){
+		document.getElementById('edit'+y).disabled = true;
+	}
+
+	for(var z=0; z!=4 ;z++){
+		addEditDelValue('ed',z,td[z]);
+	}
+	for(var a=2;a!=4;a++){
+		document.getElementById('td'+a+id).innerHTML = "<input onchange='addEditDelValue("+EDIT_KEY_ALT+","+a+",this.value)' id='el2' class='form-control' type='text' name='editElement"+id+"[]' value='"+td[a]+"'>";
+	}
+
+	document.getElementById('delete'+id).disabled = true;
+
+	var string2 = "<input type='button' class='btn btn-primary btn-xs' onclick='submit("+EDIT_KEY_ALT+");' value='Done'>";
+	var string3 = "<input type='button' class='btn btn-warning btn-xs' onclick='cancelRowEdit("+id+");' value='Cancel'>"
+	document.getElementById('td3'+id).innerHTML = string2+"  "+string3;
+}
+
+
+function submit(stringName){
+	document.getElementById(stringName+'Sub').click();
+}
+
+function getDelete(id){
+	var id = document.getElementById('td0'+id).innerHTML;
+	var check = confirm("You are about to Delete Account# "+id+" . Are you sure?");
+
+	if(check != false){
+		document.getElementById('del0').value = id;
+		submit('del');
+	}
+}
+
+function editCheck(){
+	var x;
+
+	for(x=0;x!=4 && document.getElementById('ed'+x).value!='';x++){}
+	return (x != 5)? true:false;
+}
+
+function validateForm(){
+    if (chck != 0){
+        var x = confirm('You are currently checked '+chck+' Account(s). Proceed?');
+        if(x == false){
+			return false;
+		}
+    }
+}
+</script>
