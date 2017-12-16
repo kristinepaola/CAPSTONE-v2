@@ -2,10 +2,7 @@
 require ("sql_connect.php")
 ?>
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,12 +36,6 @@ require ("sql_connect.php")
     </head>
     <body>
 
-        <div id="preloader">
-            <div id="status">&nbsp;</div>
-        </div>
-        <!-- Body content -->
-
-
         <div class="header-connect">
             <div class="container">
                 <div class="row">
@@ -60,32 +51,9 @@ require ("sql_connect.php")
             </div>
         </div>
         <!--End top header -->
-
-        <nav class="navbar navbar-default ">
-            <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse yamm" id="navigation">
-                    <div class="button navbar-right">
-                        <button class="navbar-btn nav-button wow bounceInRight login" onclick=" window.open('register.html')" data-wow-delay="0.4s">Login</button>
-                        <button class="navbar-btn nav-button wow fadeInRight" onclick=" window.open('submit-property.html')" data-wow-delay="0.5s">Submit</button>
-                    </div>
-                    <ul class="main-nav nav navbar-nav navbar-right">
-                        <li class="dropdown ymm-sw " data-wow-delay="0.1s">
-                        </ul>  <ul class="main-nav nav navbar-nav navbar-right">
-                              <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="AboutUs.html">About Us</a></li>
-                              <li class="wow fadeInDown" data-wow-delay="0.1s"><a class="" href="EventPageHERE.html">Events</a></li>
-                              <li class="wow fadeInDown" data-wow-delay="0.4s"><a href="OrgPageHERE.html">Organization</a></li>
-                              <li class="dropdown yamm-fw" data-wow-delay="0.1s">
-                                        <!-- /.yamm-content -->
-                                    </li>
-                                </ul>
-                            </li>
-
-
-                        </ul>
-                </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
         <!-- End of nav bar -->
@@ -93,8 +61,8 @@ require ("sql_connect.php")
         <div class="page-head">
             <div class="container">
                 <div class="row">
-                    <div class="page-head-content">
-                        <h1 class="page-title">Home New account / Sign in </h1>
+                    <div class="page-head-content"><br><br>
+                        <h1 class="page-title"><center>A Web Portal for local Volunteers and Non Profit Organization</center></h1>
                     </div>
                 </div>
             </div>
@@ -113,15 +81,15 @@ require ("sql_connect.php")
                             <form method = "POST" action = "insertRegisteredVolunteeer.php">
                                 <div class="form-group">
                                     <label for="name">First Name</label>
-                                    <input type="text" class="form-control" name="firstName">
+                                    <input type="text" class="form-control" name="firstName" placeholder="Ex: Elle">
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Last Name</label>
-                                    <input type="text" class="form-control" name="lastName">
+                                    <input type="text" class="form-control" name="lastName" placeholder="Ex: Woods">
                                 </div>
                                 <div class="form-group">
                                     <label for="password">Email</label>
-                                    <input type="text" class="form-control" name="email">
+                                    <input type="text" class="form-control" name="email" placeholder="Ex:email@email.com">
                                 </div>
                                 <div class="form-group">
                                     <label for="password">Password</label>
@@ -129,7 +97,7 @@ require ("sql_connect.php")
                                 </div>
                                 <div class="form-group">
                                     <label for="password">Confirm Password</label>
-                                    <input type="password" class="form-control" name="confirmPass">
+                                    <input type="password" class="form-control">
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-default">Register</button>

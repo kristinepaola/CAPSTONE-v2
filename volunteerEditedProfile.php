@@ -60,9 +60,9 @@
               </div>
             </p>
           <span>Name: <?php echo $row['firstName']." ".$row['lastName']; ?></span><br>
-          <span>Address: </span><br>
-          <span>Schedule: </span><br>
-          <span>Occupation: </span><br>
+          <span>Address: <?php echo $row['address'];?> </span><br>
+          <span>Schedule: <?php echo $row['schedule'];?></span><br>
+          <span>Occupation: <?php echo $row['occupation'];?> </span><br>
         <a href="editProfile.php?volId=<?php echo $row['volunteer_id'] ?>">Edit</a>
         </div>
       </div>

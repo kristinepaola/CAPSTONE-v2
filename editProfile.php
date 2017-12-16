@@ -1,7 +1,7 @@
 <?php
 require ("sql_connect.php");
 $vol_id = $_GET['volId'];
-$query = "SELECT * FROM volunteer_profile WHERE vol_id = '".$vol_id ."'";
+$query = "SELECT * FROM volunteer WHERE volunteer_id = '".$vol_id ."'";
 
 $result = mysqli_query ($sql, $query);
 if (!$result){
@@ -12,15 +12,11 @@ $row = mysqli_fetch_array ($result);
 ?>
 
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>GARO ESTATE | Submit property Page</title>
+        <title>Edit Profile</title>
         <meta name="description" content="GARO is a real-estate template">
         <meta name="author" content="Kimarotec">
         <meta name="keyword" content="html5, css, bootstrap, property, real-estate theme , bootstrap template">
@@ -61,6 +57,7 @@ $row = mysqli_fetch_array ($result);
                 <div class="row">
                     <div class="page-head-content">
                         <h1 class="page-title">Edit Profile</h1>
+												<form method = "POST" action = "insertEditedProfile.php">
                     </div>
                 </div>
             </div>
@@ -107,19 +104,13 @@ $row = mysqli_fetch_array ($result);
                                                     <label>Occupation </label>
                                                     <input type = "text" name = "occupation" value ="<?php echo $row['occupation']?>"
                                                 </div>
-                                                <a href="updateProfile.php">Save</a>
+                                                <button type="submit" class="btn btn-default">Save</button>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <!--  End step 1 -->
-
-
-                        <!-- End submit form -->
-                    </div>
-                </div>
-            </div>
-        </div>
+				                </div>
+				            </div>
+				        </div>
 
         </div>
 
