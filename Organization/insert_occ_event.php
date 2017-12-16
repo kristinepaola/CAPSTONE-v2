@@ -5,7 +5,7 @@ require ("../sql_connect.php");
 $file = addslashes(file_get_contents($_FILES["eventImage"]["tmp_name"]));
 //ofels code
 $addevent_query ="INSERT INTO organization_event VALUES ('',
-                                                '13',
+                                                '31',
                                   '".$_POST['eventTitle']."',
                                   '".$_POST['eventDesc']."',
                                   '".$_POST['eventLocation']."',
@@ -35,9 +35,9 @@ $addevent_data = mysqli_query ($sql, $addevent_query);
  $noVolunteers = $_POST["noVolunteers"];
 
  foreach ($occupationName AS $key => $value ){
-   $addocc_query = "INSERT INTO occupation_event VALUES ('23',
-                                         '23',
-                                         '23',
+   $addocc_query = "INSERT INTO occupation_event VALUES ('31',
+                                         '31',
+                                         '31',
                                         '".$sql->real_escape_string($value)."',
                                         '".$sql->real_escape_string($noVolunteers[$key])."')";
 

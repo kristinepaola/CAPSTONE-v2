@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> AMBOT | Home page</title>
+  <title> Web Portal | </title>
   <meta name="description" content="A web portal for Non Profit Organizations and Local Volunteers">
   <meta name="author" content="Capstone Mamshies">
   <meta name="keyword" content="html5, css, bootstrap, property, real-estate theme , bootstrap template">
@@ -46,40 +46,17 @@
 
     <div class="collapse navbar-collapse yamm" id="navigation">
         <div class="button navbar-right">
-            <a href="login.php"><button class="navbar-btn nav-button wow bounceInRight login" id="login">Login</button></a>
-            <button class="navbar-btn nav-button wow fadeInRight" id="register" >Register</button>
+            <a href="organization_profile.php"><button class="navbar-btn nav-button wow bounceInRight login" id="">Profile</button></a>
+            <button class="navbar-btn nav-button wow fadeInRight" id="Logout" >Logout</button>
         </div>
         <ul class="main-nav nav navbar-nav navbar-right">
-        	<li class="wow fadeInDown"><a class="" href="index.php">Home</a></li>
-        	<li class="wow fadeInDown"><a class="" href="">About Us</a></li>
+        	<li class="wow fadeInDown"><a class="" href="organization_dashboard.php">Home</a></li>
+          <li class="wow fadeInDown"><a class="" href="#">About Us</a></li>
         	<li class="wow fadeInDown"><a class="" href="events.php">Events</a></li>
-        	<li class="wow fadeInDown"><a class="" href="">Organizations</a></li>
         </ul>
     </div>
   </div>
 </nav>
-<!-- MODAL FOR REGISTRATION -->
-<div id="regmodal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h3 class="info-text">Register Now!</h3>
-        </div>
-        <div class="modal-body">
-          <div class="row" style="margin:6px;">
-            <center><a href=""><button class="btn btn-warning" id="volunteer">Register as a Volunteer</button></a></center>
-          </div>
-          <div class="row" style="margin:6px;">
-            <center><a href="Organization/organization_addEvent.php"><button class="btn btn-warning" id="organization">Register as an Organization</button></a></center>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal" >Close</button>
-        </div>
-      </div>
-  </div>
-</div>
 
 </body>
 </html>

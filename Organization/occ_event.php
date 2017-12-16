@@ -46,7 +46,7 @@ $distrainings_data = mysqli_query ($sql, $distrainings_query);
           <?php
           while  ($row =mysqli_fetch_array($distrainings_data))
           {
-            echo "<option>".$row['trainingName']."</option>";
+          echo "<option>".$row['trainingName']."</option>";
           }
            ?>
       </select>
@@ -81,9 +81,9 @@ $(document).ready(function(){
   $("#container").on("click", "#delete", function(){
     $(this).parent("div").remove();
   });
-});
+
 // ADD PARTNERSHIP
-$(document).ready(function(){
+
   //Variables
    var output = '<p/><div id="partnership">Partnership with Other Organization/s:<input name="eventPartnerOrg" type="text" id="eventPartnership"><a href="#" id="delete">Delete</a></div>';
   //Add rows to the form
@@ -94,18 +94,29 @@ $(document).ready(function(){
   $("#partnership").on("click", "#delete", function(){
     $(this).parent("div").remove();
   });
-});
+
 //DROPDOWN TRAINING / SEMINAR
-$(document).ready(function(){
+
   //Variables
-   var list_trainings = '<p/><div id="trainingAttended"><label>Training/Seminar Attended<small>(required)</small></label><select id="trainingName" name="trainingName[]"><?php while ($row =mysqli_fetch_array($distrainings_data)) { echo "<option>".$row['trainingName']."</option>"; }?></select><a href="#" id="minus">minus</a></div>';
+
   //Add rows to the form
-  $("#addtrainings").click(function(){
-    $("#trainingAttended").append(list_trainings);
-  });
-  //Remove
-  $("#trainingAttended").on("click", "#minus", function(){
-    $(this).parent("div").remove();
-  });
+  // $("#addtrainings").click(function(){
+  //   $.ajax({
+  //     url: "getListTrainings.php",
+  //     method: "POST",
+  //     dataType: "json",
+  //
+  //     success: function (retval){
+  //
+  //     }
+  //   })
+  // });
+  //
+  //
+  // 
+  // //Remove
+  // $("#trainingAttended").on("click", "#minus", function(){
+  //   $(this).parent("div").remove();
+  // });
 });
 </script>

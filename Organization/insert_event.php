@@ -24,7 +24,4 @@ $data = mysqli_query ($sql, $query);
  }
 
  ?>
- <!-- '".$_POST['eventnVolunteer']."',
- '".$_POST['eventTrainingAttend']."',
- '".$_POST['eventPartnerOrg']."',
- '".$_POST['eventImage']."' -->
+
