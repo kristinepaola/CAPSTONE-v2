@@ -46,14 +46,14 @@
 
     <div class="collapse navbar-collapse yamm" id="navigation">
         <div class="button navbar-right">
-            <a href="login.php"><button class="navbar-btn nav-button wow bounceInRight login" id="login">Login</button></a>
-            <button class="navbar-btn nav-button wow fadeInRight" id="register" >Register</button>
+            <a href="login.php"><button class="navbar-btn nav-button wow bounceInRight login" id="login">Logout</button></a>
         </div>
         <ul class="main-nav nav navbar-nav navbar-right">
-        	<li class="wow fadeInDown"><a class="" href="index.php">Home</a></li>
+        	<li class="wow fadeInDown"><a class="" href="login.php">Home</a></li>
         	<li class="wow fadeInDown"><a class="" href="">About Us</a></li>
         	<li class="wow fadeInDown"><a class="" href="events.php">Events</a></li>
-        	<li class="wow fadeInDown"><a class="" href="">Organizations</a></li>
+        	<li class="wow fadeInDown"><a class="" href="lists_organizations.php">Organizations</a></li>
+          <li class="wow fadeInDown"><a class="" href="admin_dashboard.php">My Profile</a></li>
         </ul>
     </div>
   </div>
