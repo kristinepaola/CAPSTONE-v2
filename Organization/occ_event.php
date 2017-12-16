@@ -1,11 +1,5 @@
 <?php
 require ("../sql_connect.php");
-$distrainings_query ="SELECT * FROM list_trainings";
-$distrainings_data = mysqli_query ($sql, $distrainings_query);
-    if (!$distrainings_data)
-    {
-      echo "error in query";
-    }
 ?>
 <html>
 <body>
@@ -40,6 +34,7 @@ $distrainings_data = mysqli_query ($sql, $distrainings_query);
       <option value="Both(Female/Male)">Both(Female/Male)</option>
     </select>
     <br>
+<<<<<<< HEAD
     <div id="trainingAttended">
         <label>Training / Seminar Attended<small>(required)</small></label>
         <select id="trainingName" name="trainingName[]">
@@ -53,6 +48,8 @@ $distrainings_data = mysqli_query ($sql, $distrainings_query);
     <a href="#" id="addtrainings">Add</a>
   </div>
     <br>
+=======
+>>>>>>> afd17cbd1463948d1d4aee7eac8741692288088a
     <div id="container">
       Occupation Name:<input name="occupationName[]" type="text" id="occupation">
       No. of Volunteers:<input name="noVolunteers[]" type="number" id="noVolunteers">
@@ -94,6 +91,7 @@ $(document).ready(function(){
   $("#partnership").on("click", "#delete", function(){
     $(this).parent("div").remove();
   });
+<<<<<<< HEAD
 
 //DROPDOWN TRAINING / SEMINAR
 
@@ -118,5 +116,7 @@ $(document).ready(function(){
   // $("#trainingAttended").on("click", "#minus", function(){
   //   $(this).parent("div").remove();
   // });
+=======
+>>>>>>> afd17cbd1463948d1d4aee7eac8741692288088a
 });
 </script>

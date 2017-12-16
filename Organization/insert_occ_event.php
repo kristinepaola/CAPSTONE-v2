@@ -5,7 +5,11 @@ require ("../sql_connect.php");
 $file = addslashes(file_get_contents($_FILES["eventImage"]["tmp_name"]));
 //ofels code
 $addevent_query ="INSERT INTO organization_event VALUES ('',
+<<<<<<< HEAD
                                                 '31',
+=======
+                                                '10',
+>>>>>>> afd17cbd1463948d1d4aee7eac8741692288088a
                                   '".$_POST['eventTitle']."',
                                   '".$_POST['eventDesc']."',
                                   '".$_POST['eventLocation']."',
@@ -14,7 +18,6 @@ $addevent_query ="INSERT INTO organization_event VALUES ('',
                                   '".$_POST['eventMatReq']."',
                                   '".$_POST['eventAgeReq']."',
                                   '".$_POST['eventGenderReq']."',
-                                  '".$_POST['trainingAttended']."',
                                   '".$_POST['eventPartnership']."',
                                   '$file'
                                   )";
@@ -35,9 +38,15 @@ $addevent_data = mysqli_query ($sql, $addevent_query);
  $noVolunteers = $_POST["noVolunteers"];
 
  foreach ($occupationName AS $key => $value ){
+<<<<<<< HEAD
    $addocc_query = "INSERT INTO occupation_event VALUES ('31',
                                          '31',
                                          '31',
+=======
+   $addocc_query = "INSERT INTO occupation_event VALUES ('20',
+                                         '20',
+                                         '20',
+>>>>>>> afd17cbd1463948d1d4aee7eac8741692288088a
                                         '".$sql->real_escape_string($value)."',
                                         '".$sql->real_escape_string($noVolunteers[$key])."')";
 
