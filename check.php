@@ -8,8 +8,8 @@ include('sql_connect.php');
 
 $id = $_POST['id'];
 
-$result = mysqli_query($mysqli,"SELECT * FROM user WHERE user_name='".$id[0]."' AND user_password = '".$id[1]."'")
-or die(mysqli_error($mysqli));
+$result = mysqli_query($sql,"SELECT * FROM user WHERE user_name='".$id[0]."' AND user_password = '".$id[1]."'")
+or die(mysqli_error($sql));
 $result = mysqli_fetch_array($result);
 if($result){
     $_SESSION['num'] = $result[0];
@@ -17,9 +17,9 @@ if($result){
     $_SESSION['identifier'] = $result[3];
 
     if($_SESSION['identifier'] == 'volunteer'){
-      header('location:volunteer_dashboard.php');
+      header('location:volunteer/volunteer_dashboard.php');
     }else if($_SESSION['identifier'] == 'organization'){
-      header('location:organization_dashboard.php');
+      header('location:Organization/organization_dashboard.php');
     }else{
       header('location:admin_dashboard.php');
     }

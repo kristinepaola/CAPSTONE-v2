@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<?php include ('Header.php');?>
+<?php include ('Header1.php');?>
     <br><br>
       <div class="text-center">
-            <button href="admin_dashboard.php" type="button" class="btn btn-default btn-lg">Dashboard</button>
-            <button href="" type="button" class="btn btn-default btn-lg">Manage Accounts</button>
+        <a href="admin_dashboard.php"><button class="navbar-btn nav-button wow bounceInRight login animated" id="login" style="visibility: visible; animation-name: bounceInRight;">Dashboard</button></a>
+        <a href=""><button class="navbar-btn nav-button" id="login" style="visibility: visible; animation-name: bounceInRight;">Manage Accounts</button></a>
       </div>
     <br><br>
       <!-- End page header -->
       <div class="row">
         <div class="col-xs-3 m-padding">
               <div class="welcome-estate ">
-                  <a href="lists_organizations.php"><img src="assets/img/icons/png/team-3.png" alt=""></a>
+                  <a href="lists_volunteers.php"><img src="assets/img/icons/png/team-3.png" alt=""></a>
                   <h3>New Volunteers</h3>
               </div>
         </div>
