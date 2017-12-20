@@ -34,7 +34,6 @@
 
 <nav class="navbar navbar-default ">
   <div class="container">
-
     <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -45,10 +44,9 @@
         <a class="navbar-brand" href="index.html"><img src="" alt=""></a>
     </div>
 
-
     <div class="collapse navbar-collapse yamm" id="navigation">
         <div class="button navbar-right">
-            <a href="/capstone/CAPSTONE-v2/login.php"><button class="navbar-btn nav-button wow bounceInRight login" id="login">Login</button></a>
+            <a href="login.php"><button class="navbar-btn nav-button wow bounceInRight login" id="login">Login</button></a>
             <button class="navbar-btn nav-button wow fadeInRight" id="register" >Register</button>
         </div>
         <ul class="main-nav nav navbar-nav navbar-right">
@@ -70,10 +68,10 @@
         </div>
         <div class="modal-body">
           <div class="row" style="margin:6px;">
-            <center><a href="volunteer/register_volunteer.php"><button class="btn btn-warning" id="volunteer">Register as a Volunteer</button></a></center>
+            <center><a href=""><button class="btn btn-warning" id="volunteer">Register as a Volunteer</button></a></center>
           </div>
           <div class="row" style="margin:6px;">
-            <center><a href="organization/register_organization.php"><button class="btn btn-warning" id="organization">Register as an Organization</button></a></center>
+            <center><a href="Organization/organization_addEvent.php"><button class="btn btn-warning" id="organization">Register as an Organization</button></a></center>
           </div>
         </div>
         <div class="modal-footer">
