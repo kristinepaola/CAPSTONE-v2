@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-include ('Header1.php');
-include('sql_connect.php');
+  include ('Header1.php');
+  include('sql_connect.php');
 ?>
     <br><br>
       <div class="text-center">
@@ -36,17 +36,19 @@ include('sql_connect.php');
                             <tbody id='tableId'>
                             <?php
                                 $counter = 0;
-                                $table = 'SELECT * FROM user WHERE user_type != "admin" && user_type != "volunteer"';
+                                $table = 'SELECT user.user_id, organization_details.organization_name, user.status
+                                FROM organization_details
+                                INNER JOIN user ON organization_details.user_id = user.user_id';
                                 $info = mysqli_query($sql, $table);
 
                                 while($row = mysqli_fetch_array($info)){
 								                    echo"
 									                    <tr>
 										                      <td id='td0".$counter."'>".$row[0]."</td>
-										                      <td id='td1".$counter."'>".$row[1]."</td>
-                                          <td id='td2".$counter."'>".$row[4]."</td>";
-                                          echo"</td>";
-                                      		echo"<td id='td3".$counter."'><input type='button' class='btn btn-success btn-xs' id='edit".$counter."' onclick='getEdit(".$counter.")' value='Edit'></td>
+										                      <td id='td1".$counter."'>".$row[1]."</td>";
+
+                                      		echo"<td id='td2".$counter."'><input type='button' class='btn btn-success btn-xs' id='updatestatus".$counter."' onclick='updatestatus(".$counter.")' value='Update Status'></td>
+                                          <td id='td3".$counter."'><input type='button' class='btn btn-success btn-xs' id='edit".$counter."' onclick='getEdit(".$counter.")' value='Edit'></td>
                                           <td id='td4".$counter."'><input type='button' class='btn btn-danger btn-xs' id='blocked".$counter."' onclick='getDelete(".$counter.")' value='Blocked'></td>
                                           </tr>";
                                           $counter++;}
@@ -78,6 +80,9 @@ include('sql_connect.php');
 var chck = 0;
 var td = [4];
 
+function updatestatus(id){
+  
+}
 
 function addEditDelValue(idnt,id,val){
 	document.getElementById(idnt+id).value = val;
@@ -89,7 +94,7 @@ function getEdit(id){
 	var EDIT_KEY_ALT = '"ed"';
 
 
-	for(var x=0;x!=2;x++){
+	for(var x=0;x!=4;x++){
 		td[x] = document.getElementById('td'+x+id).innerHTML;
 	}
 
@@ -97,23 +102,31 @@ function getEdit(id){
 		document.getElementById('edit'+y).disabled = true;
 	}
 
-	for(var z=0; z!=4 ;z++){
+	for(var z=0; z!=1 ;z++){
 		addEditDelValue('ed',z,td[z]);
 	}
-	for(var a=2;a!=4;a++){
+	for(var a=1;a!=3;a++){
 		document.getElementById('td'+a+id).innerHTML = "<input onchange='addEditDelValue("+EDIT_KEY_ALT+","+a+",this.value)' id='el2' class='form-control' type='text' name='editElement"+id+"[]' value='"+td[a]+"'>";
 	}
 
-	document.getElementById('delete'+id).disabled = true;
+	//document.getElementById('blocked'+id).disabled = true;
 
 	var string2 = "<input type='button' class='btn btn-primary btn-xs' onclick='submit("+EDIT_KEY_ALT+");' value='Done'>";
-	var string3 = "<input type='button' class='btn btn-warning btn-xs' onclick='cancelRowEdit("+id+");' value='Cancel'>"
+	var string3 = "<input type='button' class='btn btn-primary btn-xs' onclick='cancelRowEdit("+id+");' value='Cancel'>"
 	document.getElementById('td3'+id).innerHTML = string2+"  "+string3;
 }
 
-
 function submit(stringName){
 	document.getElementById(stringName+'Sub').click();
+}
+
+function cancelRowEdit(id){
+	for(var x = 0;x != 4;x++){
+		document.getElementById('td'+x+id).innerHTML = td[x];
+	}
+	// for(var y = 0; document.getElementById('edit'+y);y++){
+	// 	document.getElementById('edit'+y).disabled = false;
+	// }
 }
 
 function getDelete(id){
@@ -129,16 +142,16 @@ function getDelete(id){
 function editCheck(){
 	var x;
 
-	for(x=0;x!=4 && document.getElementById('ed'+x).value!='';x++){}
-	return (x != 5)? true:false;
+	for(x=0;x!=2 && document.getElementById('ed'+x).value!='';x++){}
+	return (x != 3)? true:false;
 }
 
 function validateForm(){
     if (chck != 0){
         var x = confirm('You are currently checked '+chck+' Account(s). Proceed?');
         if(x == false){
-			return false;
-		}
+			       return false;
+		        }
     }
 }
 </script>

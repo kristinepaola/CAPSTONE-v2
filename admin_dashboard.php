@@ -4,7 +4,6 @@
       <div class="text-center">
         <a href="admin_dashboard.php"><button class="navbar-btn nav-button wow bounceInRight login animated" id="login" style="visibility: visible; animation-name: bounceInRight;">Dashboard</button></a>
         <a href=""><button class="navbar-btn nav-button" id="login" style="visibility: visible; animation-name: bounceInRight;">Manage Accounts</button></a>
-        <a href="javascript:;" data-toggle="collapse" data-target="#dem" class="" aria-expanded="true"><i class="fa fa-fw fa-calendar"></i> Gym Schedule<i class="fa fa-fw fa-caret-down"></i></a>
       </div>
     <br><br>
       <!-- End page header -->
