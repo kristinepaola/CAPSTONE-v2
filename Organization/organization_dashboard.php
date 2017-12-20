@@ -1,6 +1,10 @@
 <?php
 require ("../sql_connect.php");
+<<<<<<< HEAD
 include ("../Header1.php");
+=======
+include ("../Header.php");
+>>>>>>> duff-
 
 $displaycalendar_query = "SELECT * FROM organization_event";
 $displaycalendar_data = mysqli_query($sql, $displaycalendar_query);
@@ -82,7 +86,7 @@ if(!$displaycalendar_data){
         <div class="col-sm-12 p0">
             <div class="box-two proerty-item">
                 <div class="item-thumb">
-                    <a href="property-1.html" ><img src="assets/img/demo/property-3.jpg"></a>
+                    <a href="property-1.html" ><img src="../assets/img/demo/property-3.jpg"></a>
                 </div>
 
                 <div class="item-entry overflow">
@@ -151,6 +155,7 @@ $(document).ready(function(){
 		selectHelper: false,
 		eventLimit: true,
 
+<<<<<<< HEAD
 		<!-- DISPLAY EVENTS FROM DB -->
 		events:[
 			start: '2017-12-13',
@@ -160,6 +165,9 @@ $(document).ready(function(){
 
 
 
+=======
+		
+>>>>>>> duff-
 	});
 });
 </script>

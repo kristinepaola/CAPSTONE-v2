@@ -51,9 +51,9 @@
 
     </div>
 </div>
-
+</body>
+</html>
 <script>
-
   function SubmitForm(){
 	    var y;
 	    var max=2;
@@ -64,11 +64,4 @@
             document.getElementById('formSubmit').click();
         }
 	}
-
 </script>
-
-  <!-- Footer area-->
-<?php include("Footer.php") ?>
-
-</body>
-</html>
